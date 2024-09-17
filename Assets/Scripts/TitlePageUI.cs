@@ -1,9 +1,11 @@
+ using System;
  using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UIElements;
 using UnityEngine.SceneManagement;
 
+ [Obsolete]
 public class TitlePageUI : MonoBehaviour
 {
     public float loadingTime;

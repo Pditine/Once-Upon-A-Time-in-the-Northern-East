@@ -103,15 +103,15 @@ namespace PurpleFlowerCore
             EffectModule.Play(clip,position,finishCallBack);
         }
 
-        public static void PlayEffect(string clipName,Transform parent = null,UnityAction finishCallBack = null)
-        {
-            
-        }
-        
-        public static void PlayEffect(string clipName,Vector3 position = default,UnityAction finishCallBack = null)
-        {
-            
-        }
+        // public static void PlayEffect(string clipName,Transform parent = null,UnityAction finishCallBack = null)
+        // {
+        //     
+        // }
+        //
+        // public static void PlayEffect(string clipName,Vector3 position = default,UnityAction finishCallBack = null)
+        // {
+        //     
+        // }
         
         #endregion
     }
