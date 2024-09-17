@@ -1,0 +1,7 @@
+.button {
+}
+
+.button:hover {
+    scale: 1.1 1.1;
+    -unity-background-image-tint-color: rgb(201, 255, 251);
+}

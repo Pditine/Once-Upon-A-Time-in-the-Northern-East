@@ -1,0 +1,6 @@
+.button {
+}
+
+.button:active {
+    background-image: url("project://database/Assets/UI%20Toolkit/RecordingInterface/RecordingIcon_0.png?fileID=21300000&guid=5e7bb54f150b6b1499f3b163f1e8cf38&type=3#RecordingIcon_0");
+}

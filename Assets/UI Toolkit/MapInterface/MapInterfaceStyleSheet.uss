@@ -1,0 +1,9 @@
+.button {
+}
+
+.button:hover {
+    scale: 1.3 1.3;
+    -unity-background-image-tint-color: rgb(106, 106, 106);
+    background-image: url("project://database/Assets/UI%20Toolkit/WhiteCard.jpg?fileID=21300000&guid=c56d1bf3a6d212648a5c00436cfb0569&type=3#WhiteCard");
+    color: rgb(194, 194, 194);
+}

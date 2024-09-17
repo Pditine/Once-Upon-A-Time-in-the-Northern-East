@@ -1,0 +1,30 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:VisualElement name="Container" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/UI%20Toolkit/CommentInterface/Page4.jpg?fileID=21300000&amp;guid=a396bfc8424594945a7d7061a8143954&amp;type=3#Page4&quot;);">
+        <ui:VisualElement name="TopBar" style="flex-grow: 1; width: 1350px; height: 120px; background-image: url(&quot;project://database/Assets/UI%20Toolkit/CommentInterface/Page4.jpg?fileID=21300000&amp;guid=a396bfc8424594945a7d7061a8143954&amp;type=3#Page4&quot;); position: absolute; -unity-background-image-tint-color: rgb(0, 0, 0);" />
+        <ui:VisualElement name="BackPhoto" style="flex-grow: 1; display: flex; height: 830px; width: 1350px; position: absolute; top: 120px; background-image: url(&quot;project://database/Assets/UI%20Toolkit/ConstructionSite_0.png?fileID=21300000&amp;guid=1030bf018f7d2ff48bb78d8a5373d0bf&amp;type=3#ConstructionSite_0&quot;); -unity-background-image-tint-color: rgb(255, 255, 255);" />
+        <ui:VisualElement name="FrontInterface" style="flex-grow: 1; background-color: rgba(255, 255, 255, 0); position: absolute; width: 1350px; height: 1750px; bottom: 0; background-image: url(&quot;project://database/Assets/UI%20Toolkit/WhiteCard.jpg?fileID=21300000&amp;guid=c56d1bf3a6d212648a5c00436cfb0569&amp;type=3#WhiteCard&quot;); -unity-background-image-tint-color: rgb(255, 255, 255);">
+            <ui:Label tabindex="-1" text="Comment" parse-escape-sequences="true" display-tooltip-when-elided="true" name="CommentTitle" style="position: relative; align-self: center; font-size: 80px; margin-top: 50px; margin-right: 50px; margin-bottom: 50px; margin-left: 50px;" />
+            <ui:VisualElement name="Comment1" style="flex-grow: 1;">
+                <ui:VisualElement name="User1" style="flex-grow: 1; flex-direction: column; height: 250px; width: 1350px;">
+                    <ui:VisualElement name="Photo1" style="flex-grow: 1; width: 200px; height: 200px; background-image: url(&quot;project://database/Assets/UI%20Toolkit/CommentInterface/Page4.jpg?fileID=21300000&amp;guid=a396bfc8424594945a7d7061a8143954&amp;type=3#Page4&quot;); position: absolute; -unity-background-image-tint-color: rgb(0, 0, 0); left: 100px;" />
+                    <ui:Label tabindex="-1" text="Martian11" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Name1" style="position: relative; align-self: center; font-size: 80px; margin-top: 25px; margin-right: 25px; margin-bottom: 25px; margin-left: 25px; -unity-text-align: upper-left;" />
+                </ui:VisualElement>
+                <ui:Label tabindex="-1" text="This is so embarassing&#10;@Marmaray9217 you will love it" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Content1" style="margin-top: 25px; margin-right: 25px; margin-bottom: 25px; margin-left: 25px; font-size: 50px; height: 200px; left: 100px;" />
+            </ui:VisualElement>
+            <ui:VisualElement name="Comment2" style="flex-grow: 1;">
+                <ui:VisualElement name="User2" style="flex-grow: 1; flex-direction: column; height: 250px; width: 1350px;">
+                    <ui:VisualElement name="Photo1" style="flex-grow: 1; width: 200px; height: 200px; background-image: url(&quot;project://database/Assets/UI%20Toolkit/CommentInterface/Page4.jpg?fileID=21300000&amp;guid=a396bfc8424594945a7d7061a8143954&amp;type=3#Page4&quot;); position: absolute; -unity-background-image-tint-color: rgb(0, 0, 0); left: 100px;" />
+                    <ui:Label tabindex="-1" text="user100028982" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Name1" style="position: relative; align-self: center; font-size: 80px; margin-top: 25px; margin-right: 25px; margin-bottom: 25px; margin-left: 25px;" />
+                </ui:VisualElement>
+                <ui:Label tabindex="-1" text="where is the next video" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Content2" style="margin-top: 25px; margin-right: 25px; margin-bottom: 25px; margin-left: 25px; font-size: 50px; height: 200px; left: 100px;" />
+            </ui:VisualElement>
+            <ui:VisualElement name="Comment3" style="flex-grow: 1;">
+                <ui:VisualElement name="User1" style="flex-grow: 1; flex-direction: column; height: 250px; width: 1350px;">
+                    <ui:VisualElement name="Photo1" style="flex-grow: 1; width: 200px; height: 200px; background-image: url(&quot;project://database/Assets/UI%20Toolkit/CommentInterface/Page4.jpg?fileID=21300000&amp;guid=a396bfc8424594945a7d7061a8143954&amp;type=3#Page4&quot;); position: absolute; -unity-background-image-tint-color: rgb(0, 0, 0); left: 100px;" />
+                    <ui:Label tabindex="-1" text="sHadowDust" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Name1" style="position: relative; align-self: center; font-size: 80px; margin-top: 25px; margin-right: 25px; margin-bottom: 25px; margin-left: 25px;" />
+                </ui:VisualElement>
+                <ui:Label tabindex="-1" text="THIS ONE IS ILLEST" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Content1" style="margin-top: 25px; margin-right: 25px; margin-bottom: 25px; margin-left: 25px; font-size: 50px; height: 200px; left: 100px; -unity-font-style: normal;" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

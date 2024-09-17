@@ -1,0 +1,22 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI%20Toolkit/LevelEndInterface/LevelEndInterfaceStyleSheet.uss?fileID=7433441132597879392&amp;guid=80a2d3eff6bbe6d46816409ce0e825d1&amp;type=3#LevelEndInterfaceStyleSheet" />
+    <ui:VisualElement name="Container" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/UI%20Toolkit/LevelEndInterface/Page5.jpg?fileID=21300000&amp;guid=d126e02aafc0739478c7aef3e5388cd1&amp;type=3#Page5&quot;); opacity: 1; -unity-background-image-tint-color: rgba(255, 255, 255, 0.16);">
+        <ui:VisualElement name="Card" style="flex-grow: 1; height: 750px; position: absolute; width: 1350px; background-image: url(&quot;project://database/Assets/UI%20Toolkit/WhiteCard.jpg?fileID=21300000&amp;guid=c56d1bf3a6d212648a5c00436cfb0569&amp;type=3#WhiteCard&quot;); -unity-background-image-tint-color: rgb(207, 207, 207); background-color: rgba(0, 0, 0, 0);">
+            <ui:VisualElement name="Photo" style="flex-grow: 1; width: 300px; height: 300px; background-image: url(&quot;project://database/Assets/UI%20Toolkit/WhiteCard.jpg?fileID=21300000&amp;guid=c56d1bf3a6d212648a5c00436cfb0569&amp;type=3#WhiteCard&quot;); margin-top: 400px; margin-left: 100px; margin-right: 0; margin-bottom: 0; position: absolute;" />
+        </ui:VisualElement>
+        <ui:VisualElement name="Data" style="flex-grow: 1; position: absolute; top: 750px; width: 1350px; height: 1550px; background-image: url(&quot;project://database/Assets/UI%20Toolkit/WhiteCard.jpg?fileID=21300000&amp;guid=c56d1bf3a6d212648a5c00436cfb0569&amp;type=3#WhiteCard&quot;); align-self: center;">
+            <ui:VisualElement name="DataBox" style="flex-grow: 1; flex-direction: row; height: 200px; position: absolute; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 25px; padding-right: 25px; padding-bottom: 25px; padding-left: 25px;">
+                <ui:Label tabindex="-1" text="XXXX Likes" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Likes" style="margin-top: 25px; margin-right: 25px; margin-bottom: 25px; margin-left: 25px; font-size: 60px;" />
+                <ui:Label tabindex="-1" text="XXXX Followers" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Followers" style="margin-top: 25px; margin-right: 25px; margin-bottom: 25px; margin-left: 25px; font-size: 60px;" />
+                <ui:Label tabindex="-1" text="XXXX Dollars" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Dollars" style="margin-top: 25px; margin-right: 25px; margin-bottom: 25px; margin-left: 25px; font-size: 60px;" />
+            </ui:VisualElement>
+            <ui:VisualElement name="DataIncrease" style="flex-grow: 1; position: absolute; width: 1150px; height: 1350px; top: 200px; border-top-width: 10px; border-right-width: 10px; border-bottom-width: 10px; border-left-width: 10px; -unity-text-outline-width: 0; left: 100px; right: 100px; border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); align-self: center; padding-top: 50px; padding-right: 50px; padding-bottom: 50px; padding-left: 50px;">
+                <ui:VisualElement name="Box1" style="flex-grow: 1; height: 300px; position: absolute;">
+                    <ui:Label tabindex="-1" text="Likes Received" parse-escape-sequences="true" display-tooltip-when-elided="true" name="LikesIncrease" style="font-size: 60px;" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="ContinueCard" style="flex-grow: 1; position: absolute; bottom: 0; width: 1350px; height: 400px; background-image: url(&quot;project://database/Assets/UI%20Toolkit/WhiteCard.jpg?fileID=21300000&amp;guid=c56d1bf3a6d212648a5c00436cfb0569&amp;type=3#WhiteCard&quot;);" />
+        <ui:Button text="Continue" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Continue" class="button" style="position: absolute; bottom: 100px; width: 1100px; height: 200px; align-self: center; font-size: 80px; border-top-left-radius: 50px; border-top-right-radius: 50px; border-bottom-right-radius: 50px; border-bottom-left-radius: 50px;" />
+    </ui:VisualElement>
+</ui:UXML>

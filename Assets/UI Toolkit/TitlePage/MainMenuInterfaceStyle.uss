@@ -1,0 +1,33 @@
+.header {
+    font-size: 125px;
+    color: rgb(255, 182, 182);
+    align-self: center;
+    margin-top: 500px;
+    margin-right: 100px;
+    margin-bottom: 250px;
+    margin-left: 100px;
+}
+
+.button {
+    font-size: 50px;
+    width: 675px;
+    height: 100px;
+    justify-content: flex-start;
+    align-items: stretch;
+    align-self: flex-end;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    margin-top: 50px;
+    margin-right: 50px;
+    margin-bottom: 50px;
+    margin-left: 50px;
+    transition-duration: 0.35s;
+}
+
+.button:hover {
+    scale: 1.2 1.2;
+    -unity-background-image-tint-color: rgb(255, 255, 255);
+    color: rgb(156, 99, 78);
+}
