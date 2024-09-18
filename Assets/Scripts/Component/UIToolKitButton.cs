@@ -1,18 +1,16 @@
-﻿#region PFC
-// //-------------------------------------------------
+﻿// //-------------------------------------------------
 // //copyright@ LiJianhao
+// //Licensed under the MIT License
 // //-------------------------------------------------
-#endregion
 
 using System;
 using System.Collections.Generic;
 using Manager;
-using PurpleFlowerCore;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.UIElements;
 
-namespace Test.Component
+namespace Component
 {
     public class UIToolKitButton : MonoBehaviour
     {

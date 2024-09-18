@@ -1,4 +1,11 @@
+// //-------------------------------------------------
+// //copyright@ LiJianhao
+// //Licensed under the MIT License
+// //-------------------------------------------------
+
+using System;
 using System.Collections.Generic;
+using PurpleFlowerCore;
 using UnityEngine;
 using UnityEngine.UIElements;
 
@@ -9,9 +16,19 @@ namespace Manager
         [SerializeField] private List<UIDocument> pages = new();
         private int _currentPageIndex = 0;
         
+        private void OnDisable()
+        {
+            EventSystem.EventTrigger("LevelOver");
+        }
+        
         public void StartGame()
         {
             NextPage();
+        }
+        
+        public void ExitGame()
+        {
+            Application.Quit();
         }
 
         private void NextPage()
@@ -24,5 +41,9 @@ namespace Manager
             }
             pages[_currentPageIndex].gameObject.SetActive(true);
         }
+
+
+        
+        
     }
 }

@@ -1,8 +1,7 @@
-﻿#region PFC
-// //-------------------------------------------------
+﻿// //-------------------------------------------------
 // //copyright@ LiJianhao
+// //Licensed under the MIT License
 // //-------------------------------------------------
-#endregion
 
 using System;
 using System.Collections.Generic;
@@ -32,7 +31,7 @@ namespace Manager
 
         public void PlayEffect(string audioName)
         {
-            Debug.Log(111);
+            PFCLog.Info("Audio",audioName);
             var theAudio = audios.Find(a => a.name == audioName);
             if (theAudio is null) return;
             AudioSystem.PlayEffect(theAudio,transform);
