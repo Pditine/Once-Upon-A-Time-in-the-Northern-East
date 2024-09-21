@@ -12,6 +12,7 @@ using UnityEngine.UIElements;
 
 namespace Component
 {
+    [Obsolete("no longer used UIToolKit")]
     public class UIToolKitButton : MonoBehaviour
     {
         [SerializeField]private List<string> buttonNames = new();

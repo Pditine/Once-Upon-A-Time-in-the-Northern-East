@@ -9,14 +9,26 @@ using Data;
 using PurpleFlowerCore;
 using PurpleFlowerCore.Utility;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 namespace Manager
 {
     public class DataManager : DdolSingletonMono<DataManager>
     {
-        [SerializeField]private List<LevelData> levels = new();
+        [SerializeField]private List<LevelData> levelData = new();
+        public List<LevelData> LevelData => levelData;
         private const string DataFileName = "Data";
-        public GameData GameData { get; private set; }
+
+        private GameData _gameData;
+        public GameData GameData
+        {
+            get
+            {
+                if(GameData is null) LoadData();
+                return _gameData;
+            }
+            set => throw new NotImplementedException();
+        }
 
         private void OnEnable()
         {
@@ -32,10 +44,15 @@ namespace Manager
         {
             LoadData();
         }
+        
+        public LevelData GetLevelData(int level)
+        {
+            return levelData[level];
+        }
 
         private void LoadData()
         {
-            GameData = SaveSystem.Load<GameData>(DataFileName) ?? new GameData();
+            _gameData = SaveSystem.Load<GameData>(DataFileName) ?? new GameData();
         }
         
         private void SaveData()

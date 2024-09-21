@@ -366,108 +366,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   recordingTime: 15
   currentRecordingTime: 0
---- !u!1001 &1920153358
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: -8679921383154817045, guid: 43df9450186caa04383fdb41b47c3e64,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 8.608
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 43df9450186caa04383fdb41b47c3e64,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.776
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 43df9450186caa04383fdb41b47c3e64,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -0.711
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 43df9450186caa04383fdb41b47c3e64,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 43df9450186caa04383fdb41b47c3e64,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 43df9450186caa04383fdb41b47c3e64,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 43df9450186caa04383fdb41b47c3e64,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 43df9450186caa04383fdb41b47c3e64,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 43df9450186caa04383fdb41b47c3e64,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 43df9450186caa04383fdb41b47c3e64,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -5413220055403214005, guid: 43df9450186caa04383fdb41b47c3e64,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -4587029663812805447, guid: 43df9450186caa04383fdb41b47c3e64,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -2021178655527167927, guid: 43df9450186caa04383fdb41b47c3e64,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -447275898630060098, guid: 43df9450186caa04383fdb41b47c3e64,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: 43df9450186caa04383fdb41b47c3e64,
-        type: 3}
-      propertyPath: m_Name
-      value: FiveKnifeCutted@Walking
-      objectReference: {fileID: 0}
-    - target: {fileID: 5465940246521907071, guid: 43df9450186caa04383fdb41b47c3e64,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5866666021909216657, guid: 43df9450186caa04383fdb41b47c3e64,
-        type: 3}
-      propertyPath: m_Controller
-      value: 
-      objectReference: {fileID: 9100000, guid: 654bc57b737c6314cb073a6bc9086203, type: 2}
-    m_RemovedComponents: []
-    m_RemovedGameObjects:
-    - {fileID: 2654713335656134247, guid: 43df9450186caa04383fdb41b47c3e64, type: 3}
-    - {fileID: -8700617353114198275, guid: 43df9450186caa04383fdb41b47c3e64, type: 3}
-    - {fileID: -2572967989333021709, guid: 43df9450186caa04383fdb41b47c3e64, type: 3}
-    - {fileID: 65702495048144492, guid: 43df9450186caa04383fdb41b47c3e64, type: 3}
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 43df9450186caa04383fdb41b47c3e64, type: 3}
 --- !u!1 &1977599054
 GameObject:
   m_ObjectHideFlags: 0
@@ -560,11 +458,79 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 10.327, y: 180, z: 0}
+--- !u!1001 &2213651698867242150
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2895022169398134724, guid: e71746fb8ee4fab43bd60dba338b2226,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 8.608
+      objectReference: {fileID: 0}
+    - target: {fileID: 2895022169398134724, guid: e71746fb8ee4fab43bd60dba338b2226,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.776
+      objectReference: {fileID: 0}
+    - target: {fileID: 2895022169398134724, guid: e71746fb8ee4fab43bd60dba338b2226,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.711
+      objectReference: {fileID: 0}
+    - target: {fileID: 2895022169398134724, guid: e71746fb8ee4fab43bd60dba338b2226,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2895022169398134724, guid: e71746fb8ee4fab43bd60dba338b2226,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2895022169398134724, guid: e71746fb8ee4fab43bd60dba338b2226,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2895022169398134724, guid: e71746fb8ee4fab43bd60dba338b2226,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2895022169398134724, guid: e71746fb8ee4fab43bd60dba338b2226,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2895022169398134724, guid: e71746fb8ee4fab43bd60dba338b2226,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2895022169398134724, guid: e71746fb8ee4fab43bd60dba338b2226,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9153517346399963663, guid: e71746fb8ee4fab43bd60dba338b2226,
+        type: 3}
+      propertyPath: m_Name
+      value: FiveKnifeCutted@Walking
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e71746fb8ee4fab43bd60dba338b2226, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
-  - {fileID: 1920153358}
+  - {fileID: 2213651698867242150}
   - {fileID: 478822686}
   - {fileID: 1977599057}
   - {fileID: 474952200}
