@@ -17,7 +17,7 @@ namespace PurpleFlowerCore.Audio
             }
         }
 
-        public void Play(AudioClip clip,Transform parent,UnityAction finishCallBack)
+        public void Play(AudioClip clip,Transform parent,float volume,UnityAction finishCallBack)
         {
             AudioPlayer thePlayer = Pool.Pop().GetComponent<AudioPlayer>();
             if(parent)
@@ -30,10 +30,10 @@ namespace PurpleFlowerCore.Audio
             {
                 Pool.Push(thePlayer.gameObject);
             };
-            thePlayer.Play(clip,1,finishCallBack);
+            thePlayer.Play(clip,volume,finishCallBack);
         }
         
-        public void Play(AudioClip clip,Vector3 position,UnityAction finishCallBack)
+        public void Play(AudioClip clip,Vector3 position,float volume,UnityAction finishCallBack)
         {
             AudioPlayer thePlayer = Pool.Pop().GetComponent<AudioPlayer>();
             thePlayer.transform.position = position;
@@ -42,7 +42,7 @@ namespace PurpleFlowerCore.Audio
             {
                 Pool.Push(thePlayer.gameObject);
             };
-            thePlayer.Play(clip,1,finishCallBack);
+            thePlayer.Play(clip,volume,finishCallBack);
         }
     }
 }

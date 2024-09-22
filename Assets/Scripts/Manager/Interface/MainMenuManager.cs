@@ -3,14 +3,16 @@
 // //Licensed under the MIT License
 // //-------------------------------------------------
 
+using PurpleFlowerCore;
 using UnityEngine;
+using UnityEngine.UI;
 
 namespace Manager.Interface
 {
     public class MainMenuManager : MonoBehaviour
     {
-        [SerializeField]private GameObject settingPanel;
-        
+        [SerializeField] private Slider bgmSlider;
+        [SerializeField] private Slider effectSlider;
         public void StartGame()
         {
             InterfaceManager.Instance.NextPage();
@@ -20,15 +22,22 @@ namespace Manager.Interface
         {
             InterfaceManager.Instance.NextPage();
         }
-
-        public void Setting()
-        {
-            settingPanel.SetActive(!settingPanel.activeSelf);
-        }
         
         public void Quit()
         {
             Application.Quit();
+        }
+        
+        public void OnBGMChange()
+        {
+            PFCLog.Info("BGM",bgmSlider.value);
+            AudioSystem.BGMVolume = bgmSlider.value;
+        }
+        
+        public void OnEffectChange()
+        {
+            PFCLog.Info("Effect",effectSlider.value);
+            AudioSystem.EffectVolume = effectSlider.value;
         }
     }
 }

@@ -8,7 +8,6 @@ using System.Collections.Generic;
 using PurpleFlowerCore;
 using PurpleFlowerCore.Utility;
 using UnityEngine;
-using UnityEngine.Serialization;
 using UnityEngine.UI;
 
 namespace Manager
@@ -49,6 +48,7 @@ namespace Manager
                     FadeUtility.FadeOut(blackPanel, 80);
                 }
             });
+            PFCLog.Info("interface",$"next page:{_currentPageIndex}");
         }
         
     }

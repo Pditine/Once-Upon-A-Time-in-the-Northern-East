@@ -1,4 +1,8 @@
-﻿// using UnityEditor;
+﻿// //-------------------------------------------------
+// //copyright@ LiJianhao
+// //Licensed under the MIT License
+// //-------------------------------------------------
+// using UnityEditor;
 // using UnityEngine;
 //
 // namespace PurpleFlowerCore.Editor

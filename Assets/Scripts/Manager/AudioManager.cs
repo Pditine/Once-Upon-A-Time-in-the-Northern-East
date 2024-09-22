@@ -8,6 +8,7 @@ using System.Collections.Generic;
 using PurpleFlowerCore;
 using PurpleFlowerCore.Utility;
 using UnityEngine;
+using UnityEngine.UI;
 
 namespace Manager
 {
@@ -15,6 +16,7 @@ namespace Manager
     {
         [SerializeField] private string startBGM = "StreetOchestraBGM";
         [SerializeField] private List<AudioClip> audios = new();
+
 
         private void Start()
         {

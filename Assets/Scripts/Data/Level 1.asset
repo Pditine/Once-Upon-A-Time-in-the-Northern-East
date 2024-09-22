@@ -14,10 +14,54 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: 0
   levelName: Brother in Brothers
-  messageOptions:
-  - "\u7531\u4EBA\u7269\u864E\u54E5\u624B\u6301\u62CD\u6444\u522B\u7684\u4EBA\u7269"
-  - "\u4E09\u4E2A\u4EBA\u5165\u955C\uFF0C\u6444\u50CF\u673A\u5728\u5BF9\u9762\u6B63\u5BF9\u7740\u62CD"
-  messageEvents: []
+  messageData:
+    otherName: Brother Tiger
+    leftHead: {fileID: 1317584436, guid: 8c7139daa79b75547ab7704ede83af05, type: 3}
+    rightHead: {fileID: 21300000, guid: 018a45c093401444aa160e6fe6ea8c61, type: 3}
+    messages1:
+    - isLeft: 1
+      messageText: hey bro
+      messageImage: {fileID: 0}
+    - isLeft: 1
+      messageText: 
+      messageImage: {fileID: 21300000, guid: 39687e2f1fbf9f7419e0cf4a4c54e49a, type: 3}
+    - isLeft: 0
+      messageText: hey bro
+      messageImage: {fileID: 0}
+    - isLeft: 1
+      messageText: hey bro
+      messageImage: {fileID: 0}
+    messageOptions:
+    - optionText: "\u7531\u4EBA\u7269\u864E\u54E5\u624B\u6301\u62CD\u6444"
+      optionEvent:
+        m_PersistentCalls:
+          m_Calls:
+          - m_Target: {fileID: 0}
+            m_TargetAssemblyTypeName: 
+            m_MethodName: 
+            m_Mode: 0
+            m_Arguments:
+              m_ObjectArgument: {fileID: 0}
+              m_ObjectArgumentAssemblyTypeName: 
+              m_IntArgument: 0
+              m_FloatArgument: 0
+              m_StringArgument: 
+              m_BoolArgument: 0
+            m_CallState: 2
+    - optionText: "\u4E09\u4E2A\u4EBA\u5165\u955C\uFF0C\u6444\u50CF\u673A\u5728\u5BF9\u9762\u6B63\u5BF9\u7740\u62CD"
+      optionEvent:
+        m_PersistentCalls:
+          m_Calls: []
+    messages2:
+    - isLeft: 1
+      messageText: shit bro
+      messageImage: {fileID: 0}
+    - isLeft: 0
+      messageText: shit bro
+      messageImage: {fileID: 0}
+    - isLeft: 1
+      messageText: shit bro
+      messageImage: {fileID: 0}
   titles:
   - "\u558A\u8BDD\u6740\u9A6C\u7279\u56E2\u957F"
   - "\u4F60\u8FD9\u4E2A\u5F1F\u4E2D\u4E4B\u5F1F<color=\"blue\">@\u6740\u9A6C\u7279\u56E2\u957F</color>"
@@ -41,4 +85,4 @@ MonoBehaviour:
     viewNum: 2
     rewardNum: 20
   videos:
-  - {fileID: 0}
+  - {fileID: 9153517346399963663, guid: e71746fb8ee4fab43bd60dba338b2226, type: 3}
