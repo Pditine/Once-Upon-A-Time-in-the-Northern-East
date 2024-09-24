@@ -20,13 +20,20 @@ namespace Manager.Interface
         [SerializeField] private Message messagePrototype;
         [SerializeField] private float messageWaitTime = 0.5f;
         [SerializeField] private List<Option> options;
+        private bool _hasSelectedOption = false;
 
         private MessageData CurrentLevelMessageData => DataManager.Instance.CurrentLevelData.messageData;
-
+        
         private void OnEnable()
         {
+            Init();
             StartMessage1();
             SetMessageInfo();
+        }
+
+        private void Init()
+        {
+            _hasSelectedOption = false;
         }
 
         private void SetMessageInfo()
@@ -96,9 +103,12 @@ namespace Manager.Interface
             });
         }
 
-        public void SetVideoIndex(int index)
+        public void SelectOption(int index)
         {
-            DataManager.Instance.selectVideoIndex = index;
+            if (_hasSelectedOption) return;
+            _hasSelectedOption = true;
+            DataManager.Instance.SelectVideoIndex = index;
+
         }
     }
 }

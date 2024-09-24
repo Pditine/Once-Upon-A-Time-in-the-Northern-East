@@ -16,29 +16,40 @@ namespace Manager
 {
     public class DataManager : DdolSingletonMono<DataManager>
     {
-        [SerializeField]private List<LevelData> levelData = new();
+        [SerializeField] private List<LevelData> levelData = new();
         public List<LevelData> LevelData => levelData;
         private const string DataFileName = "Data";
         private int _currentLevelID = 0;
         private float _currentViewNum;
         private float _currentFollowNum;
         private float _currentRewardNum;
-        public int selectVideoIndex = 0;
+        private int _selectVideoIndex;
         private GameData _gameData;
+
         public GameData GameData
         {
             get
             {
-                if(GameData is null) LoadData();
+                if (GameData is null) LoadData();
                 return _gameData;
             }
             set => throw new NotImplementedException();
         }
-        
+
         public int CurrentLevelID => _currentLevelID;
         public LevelData CurrentLevelData => GetLevelData(CurrentLevelID);
 
-        private void OnEnable()
+        public int SelectVideoIndex
+        {
+            get => _selectVideoIndex;
+            set
+            {
+                PFCLog.Info("DataManager", $"SelectVideoIndex:{value}");
+                _selectVideoIndex = value;
+            }
+        }
+
+    private void OnEnable()
         {
             EventSystem.AddEventListener("LevelOver", SaveData);
         }
@@ -80,7 +91,7 @@ namespace Manager
         
         private void SaveData()
         {
-            SaveSystem.Save( DataFileName,GameData);
+            SaveSystem.Save(DataFileName,GameData);
         }
 
     }

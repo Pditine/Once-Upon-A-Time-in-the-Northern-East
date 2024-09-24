@@ -19,7 +19,7 @@ namespace Manager.Interface
         private void OnEnable()
         {
             var levelData = DataManager.Instance.CurrentLevelData;
-            var index = DataManager.Instance.selectVideoIndex;
+            var index = DataManager.Instance.SelectVideoIndex;
             _video = Instantiate(levelData.videos[index], sceneRoot.position, Quaternion.identity, sceneRoot);
             PFCLog.Info("record",$"record start:{levelData.videos[index].name}");
             DelayUtility.Delay(videoTime,RecordOver);
@@ -27,7 +27,7 @@ namespace Manager.Interface
         
         private void RecordOver()
         {
-            Destroy(_video,2);
+            Destroy(_video,1.2f);
             InterfaceManager.Instance.NextPage();
         }
     }
