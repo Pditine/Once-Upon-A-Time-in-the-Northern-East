@@ -12,17 +12,22 @@ namespace Manager.Interface
     public class RecordManager : MonoBehaviour
     {
         [SerializeField] private Transform sceneRoot;
+        [SerializeField] private float videoTime = 5;
+        private GameObject _video;
+        
 
         private void OnEnable()
         {
-            var levelData = LevelManager.Instance.CurrentLevelData;
-            Instantiate(levelData.videos[0], sceneRoot.position, Quaternion.identity, sceneRoot);
-            PFCLog.Info("record",$"record start:{levelData.videos[0].name}");
-            DelayUtility.Delay(5,RecordOver);
+            var levelData = DataManager.Instance.CurrentLevelData;
+            var index = DataManager.Instance.selectVideoIndex;
+            _video = Instantiate(levelData.videos[index], sceneRoot.position, Quaternion.identity, sceneRoot);
+            PFCLog.Info("record",$"record start:{levelData.videos[index].name}");
+            DelayUtility.Delay(videoTime,RecordOver);
         }
         
         private void RecordOver()
         {
+            Destroy(_video,2);
             InterfaceManager.Instance.NextPage();
         }
     }

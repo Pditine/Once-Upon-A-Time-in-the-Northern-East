@@ -16,8 +16,7 @@ namespace Manager
     {
         [SerializeField] private string startBGM = "StreetOchestraBGM";
         [SerializeField] private List<AudioClip> audios = new();
-
-
+        
         private void Start()
         {
             PlayBGM(startBGM);
@@ -25,7 +24,7 @@ namespace Manager
 
         public void PlayBGM(string audioName)
         {
-
+            PFCLog.Info("Audio",audioName);
             var theAudio = audios.Find(a => a.name == audioName);
             if (theAudio is null) return;
             AudioSystem.PlayBGM(theAudio);

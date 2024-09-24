@@ -911,16 +911,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e63645ab88b2426096ad9ede881bd2de, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levels:
-  - {fileID: 11400000, guid: 0d7fda3fa1baeda4e95fa858e7d8b7a0, type: 2}
-  - {fileID: 11400000, guid: 4b866e87fe4fd7049a8bdc59dd5b74c8, type: 2}
-  - {fileID: 11400000, guid: 1b56debdc56c85e4795543eac0f1a072, type: 2}
-  - {fileID: 11400000, guid: cf85809b894b00740a57975937cda0c8, type: 2}
-  - {fileID: 11400000, guid: 38901ab15452f2e488ccc120b046652d, type: 2}
-  - {fileID: 11400000, guid: 0dab7ce810f49544fa137622e430b31c, type: 2}
-  - {fileID: 11400000, guid: 26b4d9eb899ebbd478e8b8b88b695993, type: 2}
-  - {fileID: 11400000, guid: a31c5fbdd6f59d749b438dfecb27a4c9, type: 2}
-  - {fileID: 11400000, guid: badf2a8daeabac94c9cf8b6a96612b76, type: 2}
+  levelData: []
 --- !u!1 &2056036260
 GameObject:
   m_ObjectHideFlags: 0
@@ -1013,14 +1004,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f63343c94386a194baa6174253683182, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pages:
-  - {fileID: 1124030763}
-  - {fileID: 782433731}
-  - {fileID: 618654231}
-  - {fileID: 1645353891}
-  - {fileID: 1802068970}
-  - {fileID: 1410837615}
-  - {fileID: 1255975602}
+  interfaces: []
+  blackPanel: {fileID: 0}
+  title: {fileID: 0}
 --- !u!1 &2073676584
 GameObject:
   m_ObjectHideFlags: 0

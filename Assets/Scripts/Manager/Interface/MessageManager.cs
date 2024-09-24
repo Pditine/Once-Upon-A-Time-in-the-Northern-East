@@ -21,7 +21,7 @@ namespace Manager.Interface
         [SerializeField] private float messageWaitTime = 0.5f;
         [SerializeField] private List<Option> options;
 
-        private MessageData CurrentLevelMessageData => LevelManager.Instance.CurrentLevelData.messageData;
+        private MessageData CurrentLevelMessageData => DataManager.Instance.CurrentLevelData.messageData;
 
         private void OnEnable()
         {
@@ -94,6 +94,11 @@ namespace Manager.Interface
                 messageText = text.text,
                 messageImage = null
             });
+        }
+
+        public void SetVideoIndex(int index)
+        {
+            DataManager.Instance.selectVideoIndex = index;
         }
     }
 }

@@ -22,7 +22,7 @@ namespace GamePlay
         {
             PFCLog.Info("Message",$"show message:{info.messageText}");
             var currentHead = info.isLeft ? leftHead : rightHead;
-            currentHead.sprite = info.isLeft ? LevelManager.Instance.CurrentLevelData.messageData.leftHead : LevelManager.Instance.CurrentLevelData.messageData.rightHead;
+            currentHead.sprite = info.isLeft ? DataManager.Instance.CurrentLevelData.messageData.leftHead : DataManager.Instance.CurrentLevelData.messageData.rightHead;
             currentHead.gameObject.SetActive(true);
             messageText.text = info.messageText;
             messageImage.sprite = info.messageImage;

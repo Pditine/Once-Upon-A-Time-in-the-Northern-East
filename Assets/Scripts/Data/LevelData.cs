@@ -46,6 +46,27 @@ public struct OptionInfo
     public UnityEvent optionEvent;
 }
 
+[Serializable]
+public struct TitleInfo
+{
+    public string title;
+    public RevenueData revenueData;
+}
+
+[Serializable]
+public struct TagInfo
+{
+    public string tag;
+    public RevenueData revenueData;
+}
+
+[Serializable]
+public struct PublishData
+{
+    public List<TitleInfo> titles;
+    public List<TagInfo> tags;
+}
+
 namespace Data
 {
     [CreateAssetMenu(fileName = "LevelData", menuName = "Data/LevelData")]
@@ -54,10 +75,7 @@ namespace Data
         public int id;
         public string levelName;
         public MessageData messageData;
-        public List<string> titles = new();
-        public List<UnityEvent> titleEvents = new();
-        public List<string> tags = new();
-        public List<UnityEvent> tagEvents = new();
+        public PublishData publishData;
         public List<string> comments = new();
         public List<RevenueData> expectedRevenue = new();
         public List<GameObject> videos = new();

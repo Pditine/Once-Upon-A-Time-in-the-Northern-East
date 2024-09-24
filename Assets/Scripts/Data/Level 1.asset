@@ -62,16 +62,39 @@ MonoBehaviour:
     - isLeft: 1
       messageText: shit bro
       messageImage: {fileID: 0}
-  titles:
-  - "\u558A\u8BDD\u6740\u9A6C\u7279\u56E2\u957F"
-  - "\u4F60\u8FD9\u4E2A\u5F1F\u4E2D\u4E4B\u5F1F<color=\"blue\">@\u6740\u9A6C\u7279\u56E2\u957F</color>"
-  - "\u6700\u540E\u901A\u7252"
-  titleEvents: []
-  tags:
-  - "\u641E\u7B11"
-  - "\u8857\u5934\u6597\u6BB4"
-  - "\u7CBE\u795E\u5C0F\u4F19"
-  tagEvents: []
+  publishData:
+    titles:
+    - title: "\u558A\u8BDD\u6740\u9A6C\u7279\u56E2\u957F"
+      revenueData:
+        followNum: 3
+        viewNum: 0
+        rewardNum: 0
+    - title: "\u4F60\u8FD9\u4E2A\u5F1F\u4E2D\u4E4B\u5F1F@\u6740\u9A6C\u7279\u56E2\u957F"
+      revenueData:
+        followNum: 0
+        viewNum: 5
+        rewardNum: 0
+    - title: "\u6700\u540E\u901A\u7252"
+      revenueData:
+        followNum: 0
+        viewNum: 3
+        rewardNum: 0
+    tags:
+    - tag: "\u641E\u7B11 "
+      revenueData:
+        followNum: 3
+        viewNum: 0
+        rewardNum: 0
+    - tag: "\u8857\u5934\u6597\u6BB4 "
+      revenueData:
+        followNum: 0
+        viewNum: 0
+        rewardNum: 5
+    - tag: "\u7CBE\u795E\u5C0F\u4F19 "
+      revenueData:
+        followNum: 0
+        viewNum: 10
+        rewardNum: 0
   comments:
   - "\u4E00\u4E9B\u6D4B\u8BD5\u7528\u7684\u8BC4\u8BBA"
   - "\u6211\u4E5F\u4E0D\u77E5\u9053\u8FD9\u4E9B\u8BC4\u8BBA\u5177\u4F53\u5E94\u8BE5\u4EE5\u4EC0\u4E48\u65B9\u5F0F\u968F\u673A"
@@ -85,4 +108,5 @@ MonoBehaviour:
     viewNum: 2
     rewardNum: 20
   videos:
+  - {fileID: 919132149155446097, guid: d49c36da86e0a2647b330ddb01cbb2a6, type: 3}
   - {fileID: 9153517346399963663, guid: e71746fb8ee4fab43bd60dba338b2226, type: 3}
