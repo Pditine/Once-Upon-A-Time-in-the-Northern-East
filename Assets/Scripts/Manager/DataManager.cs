@@ -49,6 +49,13 @@ namespace Manager
             }
         }
 
+        public RevenueData CurrentRevenueData => new()
+        {
+            followNum = _currentFollowNum,
+            viewNum = _currentViewNum,
+            rewardNum = _currentRewardNum
+        };
+
     private void OnEnable()
         {
             EventSystem.AddEventListener("LevelOver", SaveData);

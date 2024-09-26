@@ -6,6 +6,11 @@ namespace PurpleFlowerCore.Utility
 {
     public static class DelayUtility
     {
+        /// <summary>
+        /// 延迟执行
+        /// </summary>
+        /// <param name="time">延时时间</param>
+        /// <param name="canScale">是否受到TimeScale影响</param>
         public static void Delay(float time,UnityAction action,bool canScale = true)
         {
             MonoSystem.Start_Coroutine(DoDelay(time, action,canScale));

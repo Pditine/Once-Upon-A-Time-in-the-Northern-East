@@ -19,7 +19,9 @@ namespace GamePlay
         
         public void ShowTitle(TagInfo info)
         {
-            text.text = "<color=blue>#"+info.tag+"</color>";
+            // text.text = "<color=blue>#"+info.tag+"</color>";
+            text.text = info.tag;
+            text.color = Color.blue;
             _revenue = info.revenueData;
             TheButton.enabled = true;
             TheImage.color = new Color(TheImage.color.r, TheImage.color.g, TheImage.color.b, 1f);

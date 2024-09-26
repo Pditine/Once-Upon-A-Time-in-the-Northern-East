@@ -67,6 +67,14 @@ public struct PublishData
     public List<TagInfo> tags;
 }
 
+[Serializable]
+public struct CommentInfo
+{
+    public string UserName;
+    public Sprite UserHead;
+    public string Comment;
+}
+
 namespace Data
 {
     [CreateAssetMenu(fileName = "LevelData", menuName = "Data/LevelData")]
@@ -76,7 +84,7 @@ namespace Data
         public string levelName;
         public MessageData messageData;
         public PublishData publishData;
-        public List<string> comments = new();
+        public List<CommentInfo> commentData = new();
         public List<RevenueData> expectedRevenue = new();
         public List<GameObject> videos = new();
     }

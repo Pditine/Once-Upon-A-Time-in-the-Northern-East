@@ -95,11 +95,22 @@ MonoBehaviour:
         followNum: 0
         viewNum: 10
         rewardNum: 0
-  comments:
-  - "\u4E00\u4E9B\u6D4B\u8BD5\u7528\u7684\u8BC4\u8BBA"
-  - "\u6211\u4E5F\u4E0D\u77E5\u9053\u8FD9\u4E9B\u8BC4\u8BBA\u5177\u4F53\u5E94\u8BE5\u4EE5\u4EC0\u4E48\u65B9\u5F0F\u968F\u673A"
-  - "\u6240\u4EE5\u73B0\u5728\u662F\u6BCF\u4E2A\u5173\u5361\u914D\u4E86\u4E00\u4E2A\u8BC4\u8BBA\u6C60"
-  - "\u5728\u6C60\u5185\u62BD\u53D6\u8BC4\u8BBA"
+  commentData:
+  - UserName: tom
+    UserHead: {fileID: 1317584436, guid: 8c7139daa79b75547ab7704ede83af05, type: 3}
+    Comment: i am tom
+  - UserName: PurpleFlower
+    UserHead: {fileID: 21300000, guid: f0d4bc37ad95593409dfa6f3e184274a, type: 3}
+    Comment: good for you
+  - UserName: "\u5954\u6CE2\u9738"
+    UserHead: {fileID: 1317584436, guid: 8c7139daa79b75547ab7704ede83af05, type: 3}
+    Comment: very good
+  - UserName: "\u9738\u6CE2\u5954"
+    UserHead: {fileID: 1317584436, guid: 8c7139daa79b75547ab7704ede83af05, type: 3}
+    Comment: very bad
+  - UserName: HaHaGuy
+    UserHead: {fileID: 1317584436, guid: 8c7139daa79b75547ab7704ede83af05, type: 3}
+    Comment: hahahahahahahahahahahahaha
   expectedRevenue:
   - followNum: 5
     viewNum: 5
