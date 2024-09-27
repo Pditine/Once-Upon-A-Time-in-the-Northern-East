@@ -43,7 +43,7 @@ namespace Manager.Interface
         private void InitCommentNum()
         {
             var currentRevenueData = DataManager.Instance.CurrentRevenueData;
-            int num = (int)(currentRevenueData.followNum + currentRevenueData.rewardNum + currentRevenueData.viewNum)/3;
+            int num = (int)(currentRevenueData.followNum + currentRevenueData.rewardNum + currentRevenueData.viewNum)*1000/3 + Random.Range(0,1000);
             commentNum.text = $"{num}条评论";
         }
         

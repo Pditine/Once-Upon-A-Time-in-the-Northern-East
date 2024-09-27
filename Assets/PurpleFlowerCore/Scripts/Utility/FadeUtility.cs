@@ -5,7 +5,10 @@ using UnityEngine.UI;
 
 namespace PurpleFlowerCore.Utility
 {
-    public class FadeUtility : SafeSingleton<FadeUtility>
+    /// <summary>
+    /// 淡入淡出效果函数库
+    /// </summary>
+    public static class FadeUtility
     {
         public static void FadeOut(Graphic graphic,float speed, UnityAction allBack = null, float alpha = 1)
         {

@@ -20,6 +20,7 @@ namespace Manager.Interface
         [SerializeField] private Message messagePrototype;
         [SerializeField] private float messageWaitTime = 0.5f;
         [SerializeField] private List<Option> options;
+        private List<Message> _currentMessages = new();
         private bool _hasSelectedOption = false;
 
         private MessageData CurrentLevelMessageData => DataManager.Instance.CurrentLevelData.messageData;
@@ -34,6 +35,10 @@ namespace Manager.Interface
         private void Init()
         {
             _hasSelectedOption = false;
+            foreach (var currentMessage in _currentMessages)
+            {
+                Destroy(currentMessage);
+            }
         }
 
         private void SetMessageInfo()
@@ -53,7 +58,7 @@ namespace Manager.Interface
         {
             foreach (var message in CurrentLevelMessageData.messages1)
             {
-                Instantiate(messagePrototype, content).ShowMessage(message);
+                CreateMessageByInfo(message);
                 yield return new WaitForSeconds(messageWaitTime);
             }
             for(int i = 0; i < CurrentLevelMessageData.messageOptions.Count; i++)
@@ -78,7 +83,7 @@ namespace Manager.Interface
             yield return new WaitForSeconds(2);
             foreach (var message in CurrentLevelMessageData.messages2)
             {
-                Instantiate(messagePrototype, content).ShowMessage(message);
+                CreateMessageByInfo(message);
                 yield return new WaitForSeconds(messageWaitTime);
             }
             UnityEvent nextInterface = new UnityEvent();
@@ -92,15 +97,24 @@ namespace Manager.Interface
                 optionEvent = nextInterface
             });
         }
+
+        private void CreateMessageByInfo(MessageInfo info)
+        {
+            var message = Instantiate(messagePrototype, content);
+            message.ShowMessage(info);
+            _currentMessages.Add(message);
+        }
         
         public void CreateMessageByOption(Text text)
         {
-            Instantiate(messagePrototype, content).ShowMessage(new MessageInfo()
+            var message = Instantiate(messagePrototype, content);
+            message.ShowMessage(new MessageInfo()
             {
                 isLeft = false,
                 messageText = text.text,
                 messageImage = null
             });
+            _currentMessages.Add(message);
         }
 
         public void SelectOption(int index)

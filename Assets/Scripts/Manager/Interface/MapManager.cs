@@ -5,6 +5,7 @@
 
 using System;
 using System.Collections.Generic;
+using PurpleFlowerCore;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -25,6 +26,7 @@ namespace Manager.Interface
             {
                 button.interactable = false;
             }
+            PFCLog.Info("MapManager",DataManager.Instance.CurrentLevelID);
             levelButtons[DataManager.Instance.CurrentLevelID].interactable = true;
         }
 

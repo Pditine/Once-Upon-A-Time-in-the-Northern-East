@@ -6,6 +6,16 @@ namespace Data
 {
     public class GameData
     {
-        public int CurrentLevelID = 0;
+        public readonly int CurrentLevelID = 0;
+        
+        public GameData()
+        {
+            CurrentLevelID = 0;
+        }
+        
+        public GameData(int currentLevelID)
+        {
+            CurrentLevelID = currentLevelID;
+        }
     }
 }

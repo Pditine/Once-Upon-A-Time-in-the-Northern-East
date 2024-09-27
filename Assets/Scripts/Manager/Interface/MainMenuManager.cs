@@ -3,7 +3,10 @@
 // //Licensed under the MIT License
 // //-------------------------------------------------
 
+using System;
+using Pditine.Component;
 using PurpleFlowerCore;
+using PurpleFlowerCore.Utility;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -13,8 +16,28 @@ namespace Manager.Interface
     {
         [SerializeField] private Slider bgmSlider;
         [SerializeField] private Slider effectSlider;
+        [SerializeField] private Button resumeButton;
+
+        private void OnEnable()
+        {
+            DelayUtility.DelayFrame(1, InitResumeButton);
+        }
+        private void InitResumeButton()
+        {
+            if(DataManager.Instance.CurrentLevelID == 0)
+            {
+                resumeButton.interactable = false;
+                resumeButton.GetComponent<ButtonEffect_Scale>().enabled = false;
+            }else
+            {
+                resumeButton.interactable = true;
+                resumeButton.GetComponent<ButtonEffect_Scale>().enabled = true;
+            }
+        }
+
         public void StartGame()
         {
+            DataManager.Instance.ResetData();
             InterfaceManager.Instance.NextPage();
         }
 

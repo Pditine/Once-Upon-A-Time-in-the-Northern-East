@@ -26,16 +26,6 @@ namespace Manager
         private int _selectVideoIndex;
         private GameData _gameData;
 
-        public GameData GameData
-        {
-            get
-            {
-                if (GameData is null) LoadData();
-                return _gameData;
-            }
-            set => throw new NotImplementedException();
-        }
-
         public int CurrentLevelID => _currentLevelID;
         public LevelData CurrentLevelData => GetLevelData(CurrentLevelID);
 
@@ -56,21 +46,26 @@ namespace Manager
             rewardNum = _currentRewardNum
         };
 
-    private void OnEnable()
-        {
-            EventSystem.AddEventListener("LevelOver", SaveData);
-        }
-
-        private void OnDisable()
-        {
-            EventSystem.RemoveEventListener("LevelOver", SaveData);
-        }
+        // private void OnEnable()
+        // {
+        //     EventSystem.AddEventListener("LevelOver", SaveData);
+        // }
+        //
+        // private void OnDisable()
+        // {
+        //     EventSystem.RemoveEventListener("LevelOver", SaveData);
+        // }
 
         private void Start()
         {
             LoadData();
         }
-        
+
+        private void OnDisable()
+        {
+            SaveData();
+        }
+
         public LevelData GetLevelData(int level)
         {
             return levelData[level];
@@ -94,11 +89,27 @@ namespace Manager
         private void LoadData()
         {
             _gameData = SaveSystem.Load<GameData>(DataFileName) ?? new GameData();
+            _currentLevelID = _gameData.CurrentLevelID;
         }
         
         private void SaveData()
         {
-            SaveSystem.Save(DataFileName,GameData);
+            SaveSystem.Save(DataFileName,new GameData(_currentLevelID));
+        }
+
+        public void PassLevel()
+        {
+            _currentLevelID++;
+            if (_currentLevelID >= LevelData.Count)
+                _currentLevelID = 0;
+        }
+
+        public void ResetData()
+        {
+            _currentLevelID = 0;
+            _currentFollowNum = 0;
+            _currentViewNum = 0;
+            _currentRewardNum = 0;
         }
 
     }

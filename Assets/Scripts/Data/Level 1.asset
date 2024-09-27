@@ -112,12 +112,12 @@ MonoBehaviour:
     UserHead: {fileID: 1317584436, guid: 8c7139daa79b75547ab7704ede83af05, type: 3}
     Comment: hahahahahahahahahahahahaha
   expectedRevenue:
-  - followNum: 5
-    viewNum: 5
-    rewardNum: 30
-  - followNum: 8
-    viewNum: 2
-    rewardNum: 20
+  - followNum: 0
+    viewNum: 0
+    rewardNum: 0
+  - followNum: 1
+    viewNum: 1
+    rewardNum: 1
   videos:
   - {fileID: 919132149155446097, guid: d49c36da86e0a2647b330ddb01cbb2a6, type: 3}
   - {fileID: 9153517346399963663, guid: e71746fb8ee4fab43bd60dba338b2226, type: 3}
