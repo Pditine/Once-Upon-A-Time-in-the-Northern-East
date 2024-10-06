@@ -34,6 +34,11 @@ namespace GamePlay
             Time.timeScale = 1;
         }
 
+        public void Quit()
+        {
+            Application.Quit();
+        }
+
         public void BackToMeinMenu()
         {
             InterfaceManager.Instance.TurnToPage(0);
