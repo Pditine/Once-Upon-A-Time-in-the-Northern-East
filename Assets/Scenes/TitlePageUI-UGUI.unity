@@ -1004,7 +1004,7 @@ GameObject:
   - component: {fileID: 204016807}
   - component: {fileID: 204016809}
   m_Layer: 5
-  m_Name: LevelEnd
+  m_Name: Evaluation
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2617,7 +2617,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 250.12738, y: -242.31738}
+  m_AnchoredPosition: {x: 250.12738, y: -509}
   m_SizeDelta: {x: 519.3548, y: 223.9019}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &699865575
@@ -6108,7 +6108,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 250.12738, y: -503}
+  m_AnchoredPosition: {x: 250.12738, y: -244}
   m_SizeDelta: {x: 519.3548, y: 223.9019}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1451838458

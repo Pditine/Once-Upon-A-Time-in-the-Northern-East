@@ -46,25 +46,23 @@ namespace Manager
             rewardNum = _currentRewardNum
         };
 
-        // private void OnEnable()
-        // {
-        //     EventSystem.AddEventListener("LevelOver", SaveData);
-        // }
-        //
-        // private void OnDisable()
-        // {
-        //     EventSystem.RemoveEventListener("LevelOver", SaveData);
-        // }
+        private void OnEnable()
+        {
+            EventSystem.AddEventListener("PassLevel", SaveData);
+        }
+        
+        private void OnDisable()
+        {
+            EventSystem.RemoveEventListener("PassLevel", SaveData);
+            SaveData();
+        }
 
         private void Start()
         {
             LoadData();
         }
 
-        private void OnDisable()
-        {
-            SaveData();
-        }
+
 
         public LevelData GetLevelData(int level)
         {

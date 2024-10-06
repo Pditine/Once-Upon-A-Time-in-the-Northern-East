@@ -2,11 +2,14 @@
 // //copyright@ LiJianhao
 // //Licensed under the MIT License
 // //-------------------------------------------------
+
+using UnityEngine;
+
 namespace Data
 {
     public class GameData
     {
-        public readonly int CurrentLevelID = 0;
+        [SerializeField]public int CurrentLevelID;
         
         public GameData()
         {
