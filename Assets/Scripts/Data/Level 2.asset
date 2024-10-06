@@ -120,6 +120,6 @@ MonoBehaviour:
     rewardNum: 1
   recordData:
   - video: {fileID: 919132149155446097, guid: b4b45a0fbbbe84e4ea4628676ebc2819, type: 3}
-    audio: {fileID: 8300000, guid: 2c2ead2c08ea67b41a148780b80cd81e, type: 3}
+    audio: {fileID: 8300000, guid: 05f748ea8ba018d42a786733b908b5c2, type: 3}
   - video: {fileID: 919132149155446097, guid: bbc7f7d7bfc0ac04fa6048ddb41e871c, type: 3}
     audio: {fileID: 8300000, guid: 2c2ead2c08ea67b41a148780b80cd81e, type: 3}
