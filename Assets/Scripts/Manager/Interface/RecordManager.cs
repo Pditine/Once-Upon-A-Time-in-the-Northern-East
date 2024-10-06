@@ -3,6 +3,7 @@
 // //Licensed under the MIT License
 // //-------------------------------------------------
 
+using System.Collections.Generic;
 using PurpleFlowerCore;
 using PurpleFlowerCore.Utility;
 using UnityEngine;
@@ -13,15 +14,15 @@ namespace Manager.Interface
     {
         [SerializeField] private Transform sceneRoot;
         [SerializeField] private float videoTime = 5;
+        private RecordInfo CurrentRecordInfo => DataManager.Instance.CurrentLevelData.recordData[DataManager.Instance.SelectVideoIndex];
         private GameObject _video;
         
 
         private void OnEnable()
         {
-            var levelData = DataManager.Instance.CurrentLevelData;
-            var index = DataManager.Instance.SelectVideoIndex;
-            _video = Instantiate(levelData.videos[index], sceneRoot.position, Quaternion.identity, sceneRoot);
-            PFCLog.Info("record",$"record start:{levelData.videos[index].name}");
+            _video = Instantiate(CurrentRecordInfo.video, sceneRoot.position, Quaternion.identity, sceneRoot);
+            PFCLog.Info("record",$"record start:{CurrentRecordInfo.video.name}");
+            AudioSystem.PlayEffect(CurrentRecordInfo.audio,transform);
             DelayUtility.Delay(videoTime,RecordOver);
         }
         

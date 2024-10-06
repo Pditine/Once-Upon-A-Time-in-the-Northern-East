@@ -75,6 +75,13 @@ public struct CommentInfo
     public string Comment;
 }
 
+[Serializable]
+public struct RecordInfo
+{
+    public GameObject video;
+    public AudioClip audio;
+}
+
 namespace Data
 {
     [CreateAssetMenu(fileName = "LevelData", menuName = "Data/LevelData")]
@@ -86,6 +93,6 @@ namespace Data
         public PublishData publishData;
         public List<CommentInfo> commentData = new();
         public List<RevenueData> expectedRevenue = new();
-        public List<GameObject> videos = new();
+        public List<RecordInfo> recordData = new();
     }
 }
