@@ -37,8 +37,9 @@ namespace Manager.Interface
             _hasSelectedOption = false;
             foreach (var currentMessage in _currentMessages)
             {
-                Destroy(currentMessage);
+                Destroy(currentMessage.gameObject);
             }
+            _currentMessages.Clear();
         }
 
         private void SetMessageInfo()
@@ -48,6 +49,10 @@ namespace Manager.Interface
 
         private void StartMessage1()
         {
+            foreach (var option in options)
+            {
+                option.HideOption();
+            }
             DelayUtility.Delay(4, () =>
             {
                 StartCoroutine(DoStartMessage1());

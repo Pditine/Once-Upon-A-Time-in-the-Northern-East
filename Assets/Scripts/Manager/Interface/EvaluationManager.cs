@@ -4,13 +4,14 @@
 // //-------------------------------------------------
 
 using System.Globalization;
+using PurpleFlowerCore;
 using PurpleFlowerCore.Utility;
 using UnityEngine;
 using UnityEngine.UI;
 
 namespace Manager.Interface
 {
-    public class LevelEndManager : MonoBehaviour
+    public class EvaluationManager : MonoBehaviour
     {
         [SerializeField] private Text viewNum;
         [SerializeField] private Text followNum;
@@ -44,7 +45,10 @@ namespace Manager.Interface
         public void Continue()
         {
             if(DataManager.Instance.BeyondExpectedRevenue())
+            {
                 Win();
+                EventSystem.EventTrigger("PassLevel");
+            }
             else
                 Lose();
         }

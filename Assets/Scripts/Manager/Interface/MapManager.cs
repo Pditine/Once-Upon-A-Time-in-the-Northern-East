@@ -5,6 +5,7 @@
 
 using System;
 using System.Collections.Generic;
+using GamePlay;
 using PurpleFlowerCore;
 using UnityEngine;
 using UnityEngine.UI;
@@ -14,10 +15,12 @@ namespace Manager.Interface
     public class MapManager : MonoBehaviour
     {
         [SerializeField] private List<Button> levelButtons = new();
-        
+        [SerializeField] private Introduction introduction;
         private void OnEnable()
         {
             SetLevelVisible();
+            if(DataManager.Instance.CurrentLevelID == 0)
+                introduction.ShowTexts();
         }
 
         private void SetLevelVisible()

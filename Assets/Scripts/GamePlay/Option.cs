@@ -3,6 +3,7 @@
 // //Licensed under the MIT License
 // //-------------------------------------------------
 
+using System;
 using PurpleFlowerCore;
 using UnityEngine;
 using UnityEngine.Events;
@@ -30,7 +31,9 @@ namespace GamePlay
         
         public void AddListener(UnityAction action)
         {
-            TheButton.onClick.AddListener(action);
+            _action = action;
+            if(_action != null)
+                TheButton.onClick.AddListener(_action);
         }
         
         public void HideOption()
@@ -39,6 +42,5 @@ namespace GamePlay
                 TheButton.onClick.RemoveListener(_action);
             gameObject.SetActive(false);
         }
-        
     }
 }
