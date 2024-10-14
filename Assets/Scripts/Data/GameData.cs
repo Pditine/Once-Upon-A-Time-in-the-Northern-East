@@ -9,8 +9,10 @@ namespace Data
 {
     public class GameData
     {
-        [SerializeField]public int CurrentLevelID;
-        
+        public int CurrentLevelID;
+        public float CurrentViewNum;
+        public float CurrentFollowNum;
+        public float CurrentRewardNum;        
         public GameData()
         {
             CurrentLevelID = 0;

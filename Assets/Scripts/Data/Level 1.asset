@@ -118,6 +118,8 @@ MonoBehaviour:
   - followNum: 1
     viewNum: 1
     rewardNum: 1
-  videos:
-  - {fileID: 919132149155446097, guid: d49c36da86e0a2647b330ddb01cbb2a6, type: 3}
-  - {fileID: 9153517346399963663, guid: e71746fb8ee4fab43bd60dba338b2226, type: 3}
+  recordData:
+  - video: {fileID: 919132149155446097, guid: 7d7a02719a602b54386afc00eb3fd5dd, type: 3}
+    audio: {fileID: 8300000, guid: f34629d2a8764594b963d77fdccc9417, type: 3}
+  - video: {fileID: 919132149155446097, guid: e15688c359b65f14680b0f4cc8cf24e5, type: 3}
+    audio: {fileID: 8300000, guid: 7fdb48fe38b8d064c9c0318523abf8ed, type: 3}

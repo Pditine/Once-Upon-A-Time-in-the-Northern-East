@@ -13,7 +13,7 @@ namespace Manager.Interface
     public class RecordManager : MonoBehaviour
     {
         [SerializeField] private Transform sceneRoot;
-        [SerializeField] private float videoTime = 5;
+        // [SerializeField] private float videoTime = 5;
         private RecordInfo CurrentRecordInfo => DataManager.Instance.CurrentLevelData.recordData[DataManager.Instance.SelectVideoIndex];
         private GameObject _video;
         
@@ -23,7 +23,7 @@ namespace Manager.Interface
             _video = Instantiate(CurrentRecordInfo.video, sceneRoot.position, Quaternion.identity, sceneRoot);
             PFCLog.Info("record",$"record start:{CurrentRecordInfo.video.name}");
             AudioSystem.PlayEffect(CurrentRecordInfo.audio,transform);
-            DelayUtility.Delay(videoTime,RecordOver);
+            DelayUtility.Delay(CurrentRecordInfo.audio.length,RecordOver);
         }
         
         private void RecordOver()

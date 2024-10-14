@@ -8,7 +8,7 @@ using PurpleFlowerCore;
 using PurpleFlowerCore.Utility;
 using UnityEngine;
 using UnityEngine.UI;
-
+using System.Collections;
 namespace Manager.Interface
 {
     public class EvaluationManager : MonoBehaviour
@@ -16,7 +16,10 @@ namespace Manager.Interface
         [SerializeField] private Text viewNum;
         [SerializeField] private Text followNum;
         [SerializeField] private Text rewardNum;
-        [SerializeField] private Text continueText;
+        [SerializeField] private float intervalTime;
+        [SerializeField] private Image passBtnImage;
+        [SerializeField] private Sprite winSprite;
+        [SerializeField] private Sprite loseSprite;
         private RevenueData CurrentRevenueData => DataManager.Instance.CurrentRevenueData;
 
         private void OnEnable()
@@ -27,7 +30,8 @@ namespace Manager.Interface
         private void Init()
         {
             InitData();
-            InitContinue();
+            //InitContinue();
+            StartShow();
         }
         
         private void InitData()
@@ -35,12 +39,14 @@ namespace Manager.Interface
             viewNum.text = $"view:{CurrentRevenueData.viewNum.ToString(CultureInfo.InvariantCulture)}k";
             followNum.text = $"follow:{CurrentRevenueData.followNum.ToString(CultureInfo.InvariantCulture)}k";
             rewardNum.text = $"reward:{CurrentRevenueData.rewardNum.ToString(CultureInfo.InvariantCulture)}k";
+            passBtnImage.sprite = DataManager.Instance.BeyondExpectedRevenue()?winSprite:loseSprite; 
+            passBtnImage.SetNativeSize();
+            viewNum.enabled = false;
+            followNum.enabled = false;
+            rewardNum.enabled = false;
+            passBtnImage.enabled = false;
         }
-
-        private void InitContinue()
-        {
-            continueText.text = DataManager.Instance.BeyondExpectedRevenue() ? "你过关!" : "你没过!";
-        }
+        
         
         public void Continue()
         {
@@ -52,6 +58,23 @@ namespace Manager.Interface
             else
                 Lose();
         }
+
+        public void StartShow()
+        {
+            StartCoroutine(DoStartShow());
+        }
+
+        public IEnumerator DoStartShow()
+        {
+            yield return new WaitForSeconds(intervalTime);
+            FadeUtility.FadeInAndStay(viewNum, 80);
+            yield return new WaitForSeconds(intervalTime);
+            FadeUtility.FadeInAndStay(followNum, 80);
+            yield return new WaitForSeconds(intervalTime);
+            FadeUtility.FadeInAndStay(rewardNum, 80);
+            yield return new WaitForSeconds(intervalTime);
+            FadeUtility.FadeInAndStay(passBtnImage, 80);
+        }
         
         private void Win()
         {
@@ -61,7 +84,7 @@ namespace Manager.Interface
         
         private void Lose()
         {
-            DataManager.Instance.ResetData();
+            DataManager.Instance.ResetLevel();
             InterfaceManager.Instance.NextPage();
         }
     }

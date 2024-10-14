@@ -50,6 +50,7 @@ public struct OptionInfo
 public struct TitleInfo
 {
     public string title;
+    public float publishCoefficient;
     public RevenueData revenueData;
 }
 

@@ -36,11 +36,13 @@ namespace Manager.Interface
         public void StartGame()
         {
             DataManager.Instance.ResetData();
+            DataManager.Instance.ResetLevel();
             InterfaceManager.Instance.NextPage();
         }
 
         public void Resume()
         {
+            DataManager.Instance.ResetData();
             InterfaceManager.Instance.NextPage();
         }
         

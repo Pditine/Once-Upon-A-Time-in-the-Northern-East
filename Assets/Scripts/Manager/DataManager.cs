@@ -19,15 +19,19 @@ namespace Manager
         [SerializeField] private List<LevelData> levelData = new();
         public List<LevelData> LevelData => levelData;
         private const string DataFileName = "Data";
-        private int _currentLevelID = 0;
+        private int _currentLevelID;
         private float _currentViewNum;
         private float _currentFollowNum;
         private float _currentRewardNum;
         private int _selectVideoIndex;
         private GameData _gameData;
+        private float _publishCoefficient; // 用于指定Audience Reply Interface的背景
 
         public int CurrentLevelID => _currentLevelID;
         public LevelData CurrentLevelData => GetLevelData(CurrentLevelID);
+        
+        public float PublishCoefficient => _publishCoefficient;
+
 
         public int SelectVideoIndex
         {
@@ -104,11 +108,27 @@ namespace Manager
 
         public void ResetData()
         {
-            _currentLevelID = 0;
+            // if(!BeyondExpectedRevenue())
+            //     _currentLevelID = 0;
             _currentFollowNum = 0;
             _currentViewNum = 0;
             _currentRewardNum = 0;
+            _publishCoefficient = 0;
+        }
+        
+        public int GetPublishIndex()
+        {
+            return _publishCoefficient switch
+            {
+                < 0.33f => 0,
+                < 0.66f => 1,
+                _ => 2
+            };
         }
 
+        public void ResetLevel()
+        {
+            _currentLevelID = 0;
+        }
     }
 }
