@@ -1,5 +1,12 @@
 {
   "dependencies": {
+    "com.pditine.purpleflowercore": {
+      "version": "https://github.com/Pditine/PurpleFlowerCore.git?path=src",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {},
+      "hash": "c21b955a584e775c1c662d9503b04457cef1fd73"
+    },
     "com.unity.2d.sprite": {
       "version": "1.0.0",
       "depth": 0,

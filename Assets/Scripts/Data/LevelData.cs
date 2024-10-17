@@ -5,6 +5,7 @@
 
 using System;
 using System.Collections.Generic;
+using PurpleFlowerCore.Utility;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.Serialization;
@@ -85,6 +86,7 @@ public struct RecordInfo
 
 namespace Data
 {
+    [Configurable]
     [CreateAssetMenu(fileName = "LevelData", menuName = "Data/LevelData")]
     public class LevelData : ScriptableObject
     {

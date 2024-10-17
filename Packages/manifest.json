@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "com.pditine.purpleflowercore": "https://github.com/Pditine/PurpleFlowerCore.git?path=src",
     "com.unity.2d.sprite": "1.0.0",
     "com.unity.ai.navigation": "1.1.5",
     "com.unity.ide.rider": "3.0.31",
