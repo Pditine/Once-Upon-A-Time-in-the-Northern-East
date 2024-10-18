@@ -65,16 +65,19 @@ MonoBehaviour:
   publishData:
     titles:
     - title: "\u558A\u8BDD\u6740\u9A6C\u7279\u56E2\u957F"
+      publishCoefficient: 0
       revenueData:
         followNum: 3
         viewNum: 0
         rewardNum: 0
     - title: "\u4F60\u8FD9\u4E2A\u5F1F\u4E2D\u4E4B\u5F1F@\u6740\u9A6C\u7279\u56E2\u957F"
+      publishCoefficient: 0
       revenueData:
         followNum: 0
         viewNum: 5
         rewardNum: 0
     - title: "\u6700\u540E\u901A\u7252"
+      publishCoefficient: 0
       revenueData:
         followNum: 0
         viewNum: 3
@@ -118,6 +121,24 @@ MonoBehaviour:
   - followNum: 1
     viewNum: 1
     rewardNum: 1
+  audienceReplyData:
+    background1Data:
+    - sprite: {fileID: 0}
+      text: 
+    - sprite: {fileID: 0}
+      text: 
+    - sprite: {fileID: 0}
+      text: 
+    background2Data:
+    - sprite: {fileID: 0}
+      text: 
+    - sprite: {fileID: 0}
+      text: 
+    - sprite: {fileID: 0}
+      text: 
+    background3Data: []
+    finalText: These guys are hilarious, I am gonna share this video to other folks.
+      This really saved my days in a way that I never imagined!
   recordData:
   - video: {fileID: 919132149155446097, guid: b4b45a0fbbbe84e4ea4628676ebc2819, type: 3}
     audio: {fileID: 8300000, guid: 05f748ea8ba018d42a786733b908b5c2, type: 3}

@@ -84,6 +84,22 @@ public struct RecordInfo
     public AudioClip audio;
 }
 
+[Serializable]
+public struct AudienceReplyItemData
+{
+    public Sprite sprite;
+    public string text;
+}
+
+[Serializable]
+public struct AudienceReplyData
+{
+    public List<AudienceReplyItemData> background1Data;
+    public List<AudienceReplyItemData> background2Data;
+    public List<AudienceReplyItemData> background3Data;
+    [TextArea]public string finalText;
+}
+
 namespace Data
 {
     [Configurable]
@@ -96,6 +112,7 @@ namespace Data
         public PublishData publishData;
         public List<CommentInfo> commentData = new();
         public List<RevenueData> expectedRevenue = new();
+        public AudienceReplyData audienceReplyData;
         public List<RecordInfo> recordData = new();
     }
 }

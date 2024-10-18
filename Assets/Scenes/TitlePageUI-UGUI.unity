@@ -211,7 +211,7 @@ GameObject:
   m_Component:
   - component: {fileID: 12305423}
   m_Layer: 5
-  m_Name: Points (1)
+  m_Name: CommentPoints (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6407,7 +6407,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1300236572}
   m_Layer: 5
-  m_Name: Points (2)
+  m_Name: CommentPoints (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9836,7 +9836,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2082371560}
   m_Layer: 5
-  m_Name: Points (0)
+  m_Name: CommentPoints (0)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
