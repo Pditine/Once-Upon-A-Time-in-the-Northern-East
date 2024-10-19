@@ -5,6 +5,7 @@
 
 using System;
 using System.Collections.Generic;
+using Manager;
 using PurpleFlowerCore.Utility;
 using UnityEngine;
 using UnityEngine.Events;
@@ -59,6 +60,7 @@ public struct TitleInfo
 public struct TagInfo
 {
     public string tag;
+    public float publishCoefficient;
     public RevenueData revenueData;
 }
 
@@ -98,6 +100,17 @@ public struct AudienceReplyData
     public List<AudienceReplyItemData> background2Data;
     public List<AudienceReplyItemData> background3Data;
     [TextArea]public string finalText;
+    public List<AudienceReplyItemData> GetAudienceReplyItemData()
+    {
+        var publishIndex = DataManager.Instance.GetPublishIndex();
+        return publishIndex switch
+        {
+            0 => background1Data,
+            1 => background2Data,
+            2 => background3Data,
+            _ => throw new ArgumentOutOfRangeException()
+        };
+    }
 }
 
 namespace Data

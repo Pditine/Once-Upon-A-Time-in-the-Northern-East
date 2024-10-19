@@ -65,32 +65,38 @@ MonoBehaviour:
   publishData:
     titles:
     - title: "\u558A\u8BDD\u6740\u9A6C\u7279\u56E2\u957F"
+      publishCoefficient: 0.1
       revenueData:
         followNum: 3
         viewNum: 0
         rewardNum: 0
     - title: "\u4F60\u8FD9\u4E2A\u5F1F\u4E2D\u4E4B\u5F1F@\u6740\u9A6C\u7279\u56E2\u957F"
+      publishCoefficient: 0.4
       revenueData:
         followNum: 0
         viewNum: 5
         rewardNum: 0
     - title: "\u6700\u540E\u901A\u7252"
+      publishCoefficient: 0.7
       revenueData:
         followNum: 0
         viewNum: 3
         rewardNum: 0
     tags:
     - tag: "\u641E\u7B11 "
+      publishCoefficient: 0
       revenueData:
         followNum: 3
         viewNum: 0
         rewardNum: 0
     - tag: "\u8857\u5934\u6597\u6BB4 "
+      publishCoefficient: 0
       revenueData:
         followNum: 0
         viewNum: 0
         rewardNum: 5
     - tag: "\u7CBE\u795E\u5C0F\u4F19 "
+      publishCoefficient: 0
       revenueData:
         followNum: 0
         viewNum: 10
@@ -118,6 +124,31 @@ MonoBehaviour:
   - followNum: 1
     viewNum: 1
     rewardNum: 1
+  audienceReplyData:
+    background1Data:
+    - sprite: {fileID: 21300000, guid: 39687e2f1fbf9f7419e0cf4a4c54e49a, type: 3}
+      text: Forgot to tell mom that I want an apple for breakfast tomorrow.
+    - sprite: {fileID: -432365519, guid: 69d09373a5a57004cabfb57aa8f64066, type: 3}
+      text: "The exam today is extremely hard, I am so afraid of the grade\u2026 "
+    - sprite: {fileID: -1388715782, guid: fba7aa8848d7fcf4d910074ff1c4a899, type: 3}
+      text: "Welcome to radio 33 today! We\u2019re going to introduce several new
+        songs that were published recently to you!"
+    background2Data:
+    - sprite: {fileID: 0}
+      text: 123
+    - sprite: {fileID: 0}
+      text: 123
+    - sprite: {fileID: 0}
+      text: 123
+    background3Data:
+    - sprite: {fileID: 0}
+      text: 123
+    - sprite: {fileID: 0}
+      text: 123
+    - sprite: {fileID: 0}
+      text: 123
+    finalText: These guys are hilarious, I am gonna share this video to other folks.
+      This really saved my days in a way that I never imagined!
   recordData:
   - video: {fileID: 919132149155446097, guid: 7d7a02719a602b54386afc00eb3fd5dd, type: 3}
     audio: {fileID: 8300000, guid: f34629d2a8764594b963d77fdccc9417, type: 3}

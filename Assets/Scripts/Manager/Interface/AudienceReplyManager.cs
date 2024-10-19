@@ -15,13 +15,13 @@ namespace Manager.Interface
 {
     public class AudienceReplyManager : MonoBehaviour
     {
-        [SerializeField] private Text commentNum;
-        [SerializeField] private List<Comment> comments = new();
-        [SerializeField] private Image background;
-        [SerializeField] private Transform commentRoot;
-        [SerializeField] private List<Transform> commentPoints = new();
-        [SerializeField] private List<Sprite> backgroundSprites = new();
-        private List<CommentInfo> CurrentLevelComments => DataManager.Instance.CurrentLevelData.commentData;
+        [SerializeField] private List<Item> items = new();
+        [SerializeField] private AudienceReplyBackground background;
+        [SerializeField] private Device device;
+        [SerializeField] private Text finishText;
+        [SerializeField] private float waitTime1 = 2;
+        [SerializeField] private float waitTime2 = 15;
+        private AudienceReplyData CurrentAudienceReplyData => DataManager.Instance.CurrentLevelData.audienceReplyData;
         private int PublishIndex => DataManager.Instance.GetPublishIndex();
         private void OnEnable()
         {
@@ -31,34 +31,44 @@ namespace Manager.Interface
         private void Init()
         {
             PFCLog.Info("AudienceReplyManager", $"PublishIndex:{PublishIndex}");
-            InitCommentNum();
-            InitComments();
-            InitBackground();
-            DelayUtility.Delay(6, NextPage);
-        }
-
-        private void InitComments()
-        {
-            var commentPool = CurrentLevelComments.ToList();
-            foreach (var t in comments)
+            background.Init();
+            var itemData = CurrentAudienceReplyData.GetAudienceReplyItemData();
+            for (int i = 0; i < items.Count; i++)
             {
-                int num = Random.Range(0, commentPool.Count);
-                t.ShowComment(commentPool[num]);
-                commentPool.RemoveAt(num);
+                items[i].Init(itemData[i]);
             }
-            commentRoot.position = commentPoints[PublishIndex].position;
+            device.Init();
+            finishText.enabled = false;
         }
 
-        private void InitCommentNum()
+        public void ShowItems()
         {
-            var currentRevenueData = DataManager.Instance.CurrentRevenueData;
-            int num = (int)(currentRevenueData.followNum + currentRevenueData.rewardNum + currentRevenueData.viewNum)*1000/3 + Random.Range(0,1000);
-            commentNum.text = $"{num}条评论";
+            background.ShowWhitePanel();
+            device.Disappear();
+            for (int i = 0; i < items.Count; i++)
+            {
+                items[i].Show();
+            }
+        }
+        
+        public void TryFinish()
+        {
+            foreach (var item in items)
+            {
+                if (!item.Clicked) return;
+            }
+            ShowFinishText();
         }
 
-        private void InitBackground()
+        private void ShowFinishText()
         {
-            background.sprite = backgroundSprites[PublishIndex];
+            foreach (var item in items)
+            {
+                item.Disappear();
+            }
+            finishText.text = CurrentAudienceReplyData.finalText;
+            FadeUtility.FadeInAndStay(finishText,80);
+            DelayUtility.Delay(waitTime2, NextPage);
         }
         
         private void NextPage()

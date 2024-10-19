@@ -14,11 +14,13 @@ namespace GamePlay
         private Button TheButton => GetComponent<Button>();
         private Image TheImage => GetComponent<Image>();
         private RevenueData _revenue;
+        private float _publishCoefficient;
         
         public void ShowTitle(TitleInfo info)
         {
             text.text = info.title;
             _revenue = info.revenueData;
+            _publishCoefficient = info.publishCoefficient;
             TheButton.enabled = true;
             TheImage.color = new Color(TheImage.color.r, TheImage.color.g, TheImage.color.b, 1f);
             text.color = new Color(text.color.r, text.color.g, text.color.b, 1f);
@@ -41,6 +43,7 @@ namespace GamePlay
         public void ChangeRevenue()
         {
             DataManager.Instance.ChangeRevenue(_revenue);
+            DataManager.Instance.ChangePublishCoefficient(_publishCoefficient);
         }
     }
 }
