@@ -9650,6 +9650,12 @@ MonoBehaviour:
   levelData:
   - {fileID: 11400000, guid: 0d7fda3fa1baeda4e95fa858e7d8b7a0, type: 2}
   - {fileID: 11400000, guid: c284d15eabf793a4db15da769fac0b6d, type: 2}
+  _currentLevelID: 0
+  _currentViewNum: 0
+  _currentFollowNum: 0
+  _currentRewardNum: 0
+  _selectVideoIndex: 0
+  _publishCoefficient: 0
 --- !u!1 &1874362140
 GameObject:
   m_ObjectHideFlags: 0
@@ -10652,6 +10658,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   interfaces:
   - {fileID: 126217952}
+  - {fileID: 974474487}
+  - {fileID: 1785248268}
+  - {fileID: 739218179}
   - {fileID: 1438703189}
   - {fileID: 1083062297}
   - {fileID: 204016804}
