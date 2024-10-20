@@ -118,12 +118,12 @@ MonoBehaviour:
     UserHead: {fileID: 1317584436, guid: 8c7139daa79b75547ab7704ede83af05, type: 3}
     Comment: hahahahahahahahahahahahaha
   expectedRevenue:
-  - followNum: 0
-    viewNum: 0
-    rewardNum: 0
-  - followNum: 1
-    viewNum: 1
-    rewardNum: 1
+  - followNum: 222
+    viewNum: 222
+    rewardNum: 222
+  - followNum: 222
+    viewNum: 222
+    rewardNum: 222
   audienceReplyData:
     background1Data:
     - sprite: {fileID: 0}
