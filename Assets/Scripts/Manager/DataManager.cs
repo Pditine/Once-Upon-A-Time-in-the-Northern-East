@@ -116,6 +116,11 @@ namespace Manager
             _publishCoefficient = 0;
         }
         
+        public void ResetCoefficient()
+        {
+            _publishCoefficient = 0;
+        }
+        
         public int GetPublishIndex()
         {
             return _publishCoefficient switch

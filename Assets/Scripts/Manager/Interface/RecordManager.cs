@@ -20,8 +20,9 @@ namespace Manager.Interface
 
         private void OnEnable()
         {
+            AudioSystem.PauseBGM();
             _video = Instantiate(CurrentRecordInfo.video, sceneRoot.position, Quaternion.identity, sceneRoot);
-            PFCLog.Info("record",$"record start:{CurrentRecordInfo.video.name}");
+            PFCLog.Info("record",$"record start:{CurrentRecordInfo.video.name} , wait for {CurrentRecordInfo.audio.length} seconds");
             AudioSystem.PlayEffect(CurrentRecordInfo.audio,transform);
             DelayUtility.Delay(CurrentRecordInfo.audio.length,RecordOver);
         }

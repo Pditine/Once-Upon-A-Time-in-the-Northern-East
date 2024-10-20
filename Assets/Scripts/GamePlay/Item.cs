@@ -15,7 +15,7 @@ namespace GamePlay
         [SerializeField] private Text text;
         private readonly Vector3 _originScale = new(0, 0, 0);
         private readonly Vector3 _targetScale = new(1,1,1);
-        private bool _clicked = false;
+        [Inspectable][SerializeField]private bool _clicked = false;
         public bool Clicked => _clicked;
         public void Init(AudienceReplyItemData data)
         {

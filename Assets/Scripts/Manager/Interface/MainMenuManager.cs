@@ -18,6 +18,7 @@ namespace Manager.Interface
 
         private void OnEnable()
         {
+            AudioSystem.UnpauseBGM();
             DelayUtility.DelayFrame(1, InitResumeButton);
         }
         private void InitResumeButton()
@@ -42,7 +43,7 @@ namespace Manager.Interface
 
         public void Resume()
         {
-            DataManager.Instance.ResetData();
+            DataManager.Instance.ResetCoefficient();
             InterfaceManager.Instance.NextPage();
         }
         
