@@ -121,9 +121,9 @@ MonoBehaviour:
   - followNum: 0
     viewNum: 0
     rewardNum: 0
-  - followNum: 1
-    viewNum: 1
-    rewardNum: 1
+  - followNum: 0
+    viewNum: 0
+    rewardNum: 0
   audienceReplyData:
     background1Data:
     - sprite: {fileID: 21300000, guid: 39687e2f1fbf9f7419e0cf4a4c54e49a, type: 3}

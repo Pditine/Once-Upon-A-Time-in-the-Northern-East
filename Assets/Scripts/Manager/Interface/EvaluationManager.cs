@@ -13,6 +13,7 @@ namespace Manager.Interface
 {
     public class EvaluationManager : MonoBehaviour
     {
+        [SerializeField] private CanvasGroup thisInterface;
         [SerializeField] private Text viewNum;
         [SerializeField] private Text followNum;
         [SerializeField] private Text rewardNum;
@@ -20,6 +21,10 @@ namespace Manager.Interface
         [SerializeField] private Image passBtnImage;
         [SerializeField] private Sprite winSprite;
         [SerializeField] private Sprite loseSprite;
+        [SerializeField] private GameObject SuccessCG;
+        [SerializeField] private GameObject FailCG;
+        [SerializeField] private AudioClip winClip;
+        [SerializeField] private AudioClip loseClip;
         private RevenueData CurrentRevenueData => DataManager.Instance.CurrentRevenueData;
 
         private void OnEnable()
@@ -29,6 +34,9 @@ namespace Manager.Interface
 
         private void Init()
         {
+            thisInterface.alpha = 1;
+            SuccessCG.SetActive(false);
+            FailCG.SetActive(false);
             InitData();
             //InitContinue();
             StartShow();
@@ -79,13 +87,31 @@ namespace Manager.Interface
         private void Win()
         {
             DataManager.Instance.PassLevel();
-            InterfaceManager.Instance.NextPage();
+            //先ID++,再判断
+            if(DataManager.Instance.CurrentLevelID == DataManager.Instance.LevelData.Count - 1)
+                ShowCG(true);
+            else
+                InterfaceManager.Instance.NextPage();
         }
         
         private void Lose()
         {
             DataManager.Instance.ResetLevel();
-            InterfaceManager.Instance.NextPage();
+            //InterfaceManager.Instance.NextPage();
+            ShowCG(false);
+        }
+
+        private void ShowCG(bool isWin)
+        {
+            var cdObj = isWin ? SuccessCG : FailCG;
+            var clip = isWin ? winClip : loseClip;
+            AudioSystem.PlayEffect(clip,transform);
+            cdObj.SetActive(true);
+            FadeUtility.FadeOut(thisInterface, 100);
+            DelayUtility.Delay(clip.length, () =>
+            {
+                InterfaceManager.Instance.NextPage();
+            });
         }
     }
 }

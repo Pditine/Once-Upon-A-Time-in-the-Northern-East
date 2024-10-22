@@ -1,3 +1,7 @@
+// //-------------------------------------------------
+//  //copyright@ LiJianhao
+//  //Licensed under the MIT License
+//  //-------------------------------------------------
 using System.Collections.Generic;
 using Manager;
 using PurpleFlowerCore.Utility;

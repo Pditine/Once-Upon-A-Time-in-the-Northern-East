@@ -20,12 +20,12 @@ namespace Manager
         public List<LevelData> LevelData => levelData;
         private const string DataFileName = "Data";
         private GameData _gameData;
-        [Inspectable("当前关卡Id，从0开始")][SerializeField]private int _currentLevelID;
-        [Inspectable("当前观看数")][SerializeField]private float _currentViewNum;
-        [Inspectable("当前关注数")][SerializeField]private float _currentFollowNum;
-        [Inspectable("当前打赏数")][SerializeField]private float _currentRewardNum;
-        [Inspectable("用于指定Video的索引")][SerializeField]private int _selectVideoIndex;
-        [Inspectable("用于指定AudienceReplyInterface的背景")][SerializeField]private float _publishCoefficient;
+        [Inspectable("当前关卡Id，从0开始")]private int _currentLevelID;
+        [Inspectable("当前观看数")]private float _currentViewNum;
+        [Inspectable("当前关注数")]private float _currentFollowNum;
+        [Inspectable("当前打赏数")]private float _currentRewardNum;
+        [Inspectable("用于指定Video的索引")]private int _selectVideoIndex;
+        [Inspectable("用于指定AudienceReplyInterface的背景")]private float _publishCoefficient;
 
         public int CurrentLevelID => _currentLevelID;
         public LevelData CurrentLevelData => GetLevelData(CurrentLevelID);
