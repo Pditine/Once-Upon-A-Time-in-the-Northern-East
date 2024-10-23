@@ -9,6 +9,8 @@ using PurpleFlowerCore.Utility;
 using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
+using UnityEngine.Serialization;
+
 namespace Manager.Interface
 {
     public class EvaluationManager : MonoBehaviour
@@ -19,12 +21,17 @@ namespace Manager.Interface
         [SerializeField] private Text rewardNum;
         [SerializeField] private float intervalTime;
         [SerializeField] private Image passBtnImage;
-        [SerializeField] private Sprite winSprite;
-        [SerializeField] private Sprite loseSprite;
-        [SerializeField] private GameObject SuccessCG;
-        [SerializeField] private GameObject FailCG;
-        [SerializeField] private AudioClip winClip;
-        [SerializeField] private AudioClip loseClip;
+        [SerializeField] private Sprite winButtonSprite;
+        [SerializeField] private Sprite loseButtonSprite;
+        [SerializeField] private Image gameOverCG;
+        [SerializeField] private Sprite winCG;
+        [SerializeField] private Sprite loseCG;
+
+        [SerializeField] private float waitTime;
+        // [SerializeField] private GameObject SuccessCG;
+        // [SerializeField] private GameObject FailCG;
+        // [SerializeField] private AudioClip winClip;
+        // [SerializeField] private AudioClip loseClip;
         private RevenueData CurrentRevenueData => DataManager.Instance.CurrentRevenueData;
 
         private void OnEnable()
@@ -35,8 +42,8 @@ namespace Manager.Interface
         private void Init()
         {
             thisInterface.alpha = 1;
-            SuccessCG.SetActive(false);
-            FailCG.SetActive(false);
+            // SuccessCG.SetActive(false);
+            // FailCG.SetActive(false);
             InitData();
             //InitContinue();
             StartShow();
@@ -47,7 +54,7 @@ namespace Manager.Interface
             viewNum.text = $"view:{CurrentRevenueData.viewNum.ToString(CultureInfo.InvariantCulture)}k";
             followNum.text = $"follow:{CurrentRevenueData.followNum.ToString(CultureInfo.InvariantCulture)}k";
             rewardNum.text = $"reward:{CurrentRevenueData.rewardNum.ToString(CultureInfo.InvariantCulture)}k";
-            passBtnImage.sprite = DataManager.Instance.BeyondExpectedRevenue()?winSprite:loseSprite; 
+            passBtnImage.sprite = DataManager.Instance.BeyondExpectedRevenue()?winButtonSprite:loseButtonSprite; 
             passBtnImage.SetNativeSize();
             viewNum.enabled = false;
             followNum.enabled = false;
@@ -103,12 +110,13 @@ namespace Manager.Interface
 
         private void ShowCG(bool isWin)
         {
-            var cdObj = isWin ? SuccessCG : FailCG;
-            var clip = isWin ? winClip : loseClip;
-            AudioSystem.PlayEffect(clip,transform);
-            cdObj.SetActive(true);
+             gameOverCG.sprite = isWin ? winCG : loseCG;
+             
+            // var clip = isWin ? winClip : loseClip;
+            // AudioSystem.PlayEffect(clip,transform);
+            // cdObj.SetActive(true);
             FadeUtility.FadeOut(thisInterface, 100);
-            DelayUtility.Delay(clip.length, () =>
+            DelayUtility.Delay(waitTime, () =>
             {
                 InterfaceManager.Instance.NextPage();
             });
