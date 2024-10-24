@@ -5,7 +5,7 @@
       "depth": 0,
       "source": "git",
       "dependencies": {},
-      "hash": "e281f0696041ee64a360ab0df3e835f792b30e50"
+      "hash": "b719f557a203ae6d8e0405db71a94ca3f228a3be"
     },
     "com.unity.2d.sprite": {
       "version": "1.0.0",
@@ -30,7 +30,7 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.ide.rider": {
-      "version": "3.0.31",
+      "version": "3.0.34",
       "depth": 0,
       "source": "registry",
       "dependencies": {
