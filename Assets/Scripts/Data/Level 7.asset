@@ -12,8 +12,32 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd9e9adfaf9249f4bc6af0d3a6003594, type: 3}
   m_Name: Level 7
   m_EditorClassIdentifier: 
-  id: 0
-  messageOptions: []
-  animations: []
-  tags: []
-  comments: []
+  id: 6
+  levelName: The War to End War
+  messageData:
+    otherName: Brother Tiger
+    leftHead: {fileID: 21300000, guid: 224e089ad3a101944a35804c33afc38b, type: 3}
+    rightHead: {fileID: 21300000, guid: 7ae8979dcdf50064880bc3357fc3d0b9, type: 3}
+    messages1:
+    - isLeft: 0
+      messageText: 
+      messageImage: {fileID: 0}
+    messageOptions:
+    - optionText: 
+      optionEvent:
+        m_PersistentCalls:
+          m_Calls: []
+    messages2: []
+  publishData:
+    titles: []
+    tags: []
+  commentData: []
+  expectedRevenue: []
+  audienceReplyData:
+    background1Data: []
+    background2Data: []
+    background3Data: []
+    finalText: 
+  recordData:
+  - video: {fileID: 3636585790336341969, guid: a674a0ba1837b47409a93756a3e74934, type: 3}
+    audio: {fileID: 8300000, guid: 7fdb48fe38b8d064c9c0318523abf8ed, type: 3}

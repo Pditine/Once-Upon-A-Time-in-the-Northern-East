@@ -181,7 +181,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 80
+    m_FontSize: 60
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
@@ -1002,7 +1002,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -17.2926, y: 608.0524}
-  m_SizeDelta: {x: 966.9888, y: 407.1618}
+  m_SizeDelta: {x: 950, y: 407.1618}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &148790288
 MonoBehaviour:
@@ -1037,7 +1037,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 1111111111111
+  m_Text: It's a summer in 2015, with the rising tide of short videos platforms and
+    wide spread of electronic devices, many people could use their phone to share
+    their days.
 --- !u!222 &148790289
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1255,8 +1257,8 @@ MonoBehaviour:
   winButtonSprite: {fileID: -1388715782, guid: fba7aa8848d7fcf4d910074ff1c4a899, type: 3}
   loseButtonSprite: {fileID: -432365519, guid: 69d09373a5a57004cabfb57aa8f64066, type: 3}
   gameOverCG: {fileID: 1440998493}
-  winCG: {fileID: 21300000, guid: 2f9c687af685a2f4aabda12181d8ebe9, type: 3}
-  loseCG: {fileID: 21300000, guid: 58c03f97791b5b249980b2794e5bb7ac, type: 3}
+  winCG: {fileID: 21300000, guid: 3d2c94dd1ad63a24f93fbeb22facf328, type: 3}
+  loseCG: {fileID: 21300000, guid: a1aba573b76b53348852a417444bd651, type: 3}
   waitTime: 5
 --- !u!1 &218742274
 GameObject:
@@ -1467,7 +1469,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 80
+    m_FontSize: 60
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
@@ -2533,8 +2535,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -17.2926, y: -57}
-  m_SizeDelta: {x: 966.9888, y: 407.1618}
+  m_AnchoredPosition: {x: -17.2926, y: 150}
+  m_SizeDelta: {x: 950, y: 407.1618}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &504193585
 MonoBehaviour:
@@ -2569,9 +2571,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: '2222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222
-
-'
+  m_Text: Unexpectedly, you lost your job in the factory in the Northeast. With nothing
+    to do, you use second-hand phone to view hundreds of videos on ticktok.
 --- !u!222 &504193586
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2873,7 +2874,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 80
+    m_FontSize: 60
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
@@ -4019,7 +4020,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 0.78431374}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -5146,7 +5147,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 80
+    m_FontSize: 60
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
@@ -5258,9 +5259,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   image: {fileID: 993721271}
   sprites:
-  - {fileID: -1388715782, guid: fba7aa8848d7fcf4d910074ff1c4a899, type: 3}
-  - {fileID: 21300000, guid: 018a45c093401444aa160e6fe6ea8c61, type: 3}
-  - {fileID: -432365519, guid: 69d09373a5a57004cabfb57aa8f64066, type: 3}
+  - {fileID: 21300000, guid: 704b56687c278744aae25bb51f54075d, type: 3}
+  - {fileID: 21300000, guid: f7327706fa8d8bc4a903207e6c2a36ff, type: 3}
+  - {fileID: 21300000, guid: 89c88e408a5013e4abe13b243e8fccf7, type: 3}
   points:
   - {fileID: 784558777}
   - {fileID: 423244867}
@@ -8449,7 +8450,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 80
+    m_FontSize: 60
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
@@ -8847,7 +8848,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 80
+    m_FontSize: 60
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
@@ -8926,7 +8927,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 80
+    m_FontSize: 60
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
@@ -10207,8 +10208,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -17.2926, y: -704}
-  m_SizeDelta: {x: 966.9888, y: 407.1618}
+  m_AnchoredPosition: {x: -17.2926, y: -300}
+  m_SizeDelta: {x: 950, y: 407.1618}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1970241110
 MonoBehaviour:
@@ -10243,7 +10244,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 33333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333
+  m_Text: Suddenly, you think of a plan. A plan to cooperate with your folks in local
+    place to make short videos, by which you all expect to make living...
 --- !u!222 &1970241111
 CanvasRenderer:
   m_ObjectHideFlags: 0

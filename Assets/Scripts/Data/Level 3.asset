@@ -12,8 +12,32 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd9e9adfaf9249f4bc6af0d3a6003594, type: 3}
   m_Name: Level 3
   m_EditorClassIdentifier: 
-  id: 0
-  messageOptions: []
-  animations: []
-  tags: []
-  comments: []
+  id: 2
+  levelName: Brother in Brothers
+  messageData:
+    otherName: Captain Eccentric
+    leftHead: {fileID: 21300000, guid: 83218905254f81244a3e1c88e4d4879d, type: 3}
+    rightHead: {fileID: 21300000, guid: 7ae8979dcdf50064880bc3357fc3d0b9, type: 3}
+    messages1:
+    - isLeft: 0
+      messageText: 
+      messageImage: {fileID: 0}
+    messageOptions:
+    - optionText: 
+      optionEvent:
+        m_PersistentCalls:
+          m_Calls: []
+    messages2: []
+  publishData:
+    titles: []
+    tags: []
+  commentData: []
+  expectedRevenue: []
+  audienceReplyData:
+    background1Data: []
+    background2Data: []
+    background3Data: []
+    finalText: 
+  recordData:
+  - video: {fileID: 2781190583780942068, guid: 7464e96963e958c4b8b5ae6dafee7c2e, type: 3}
+    audio: {fileID: 8300000, guid: 72666c79b43d23a459dc2a227e0bde0a, type: 3}

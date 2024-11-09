@@ -12,8 +12,32 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd9e9adfaf9249f4bc6af0d3a6003594, type: 3}
   m_Name: Level 4
   m_EditorClassIdentifier: 
-  id: 0
-  messageOptions: []
-  animations: []
-  tags: []
-  comments: []
+  id: 3
+  levelName: Shenyang Arrival
+  messageData:
+    otherName: Captain Eccentric
+    leftHead: {fileID: 21300000, guid: 83218905254f81244a3e1c88e4d4879d, type: 3}
+    rightHead: {fileID: 21300000, guid: 224e089ad3a101944a35804c33afc38b, type: 3}
+    messages1:
+    - isLeft: 0
+      messageText: 
+      messageImage: {fileID: 0}
+    messageOptions:
+    - optionText: 
+      optionEvent:
+        m_PersistentCalls:
+          m_Calls: []
+    messages2: []
+  publishData:
+    titles: []
+    tags: []
+  commentData: []
+  expectedRevenue: []
+  audienceReplyData:
+    background1Data: []
+    background2Data: []
+    background3Data: []
+    finalText: 
+  recordData:
+  - video: {fileID: 6367736835091799635, guid: 9183fedd35c0fed428bb95284e04c918, type: 3}
+    audio: {fileID: 8300000, guid: f34629d2a8764594b963d77fdccc9417, type: 3}
