@@ -118,20 +118,20 @@ MonoBehaviour:
     UserHead: {fileID: 1317584436, guid: 8c7139daa79b75547ab7704ede83af05, type: 3}
     Comment: hahahahahahahahahahahahaha
   expectedRevenue:
-  - followNum: 0
+  - followNum: 50
     viewNum: 1000
-    rewardNum: 0
-  - followNum: 0
+    rewardNum: 100
+  - followNum: 75
     viewNum: 1500
-    rewardNum: 0
+    rewardNum: 20
   audienceReplyData:
     background1Data:
-    - sprite: {fileID: 0}
-      text: 
-    - sprite: {fileID: 0}
-      text: 
-    - sprite: {fileID: 0}
-      text: 
+    - sprite: {fileID: 21300000, guid: 1e1586927119fde40a9307c54148fd8e, type: 3}
+      text: Flowers
+    - sprite: {fileID: 21300000, guid: 462ea83b13fd5994493edf6a0184d591, type: 3}
+      text: Music
+    - sprite: {fileID: 21300000, guid: a99bc04e0581997429048faa395664ec, type: 3}
+      text: Paper
     background2Data:
     - sprite: {fileID: 0}
       text: 
