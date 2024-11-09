@@ -48,22 +48,6 @@ MonoBehaviour:
               m_StringArgument: 
               m_BoolArgument: 0
             m_CallState: 2
-    - optionText: Sure, I will do this
-      optionEvent:
-        m_PersistentCalls:
-          m_Calls:
-          - m_Target: {fileID: 0}
-            m_TargetAssemblyTypeName: 
-            m_MethodName: 
-            m_Mode: 0
-            m_Arguments:
-              m_ObjectArgument: {fileID: 0}
-              m_ObjectArgumentAssemblyTypeName: 
-              m_IntArgument: 0
-              m_FloatArgument: 0
-              m_StringArgument: 
-              m_BoolArgument: 0
-            m_CallState: 2
     messages2:
     - isLeft: 1
       messageText: Sounds good
@@ -130,12 +114,12 @@ MonoBehaviour:
     UserHead: {fileID: 21300000, guid: d35456a3e1a6c2147aa7ccae8f61e3dd, type: 3}
     Comment: hahahahahahahahahahahahaha
   expectedRevenue:
-  - followNum: 5
-    viewNum: 500
-    rewardNum: 5
-  - followNum: 5
-    viewNum: 500
-    rewardNum: 5
+  - followNum: 0
+    viewNum: 0
+    rewardNum: 0
+  - followNum: 0
+    viewNum: 0
+    rewardNum: 0
   audienceReplyData:
     background1Data:
     - sprite: {fileID: 21300000, guid: 1e1586927119fde40a9307c54148fd8e, type: 3}
@@ -147,17 +131,18 @@ MonoBehaviour:
         songs that were published recently to you!"
     background2Data:
     - sprite: {fileID: 21300000, guid: 1e1586927119fde40a9307c54148fd8e, type: 3}
+      text: Forgot to tell mom that I want an apple for breakfast tomorrow.
+    - sprite: {fileID: 21300000, guid: 462ea83b13fd5994493edf6a0184d591, type: 3}
+      text: "The exam today is extremely hard, I am so afraid of the grade\u2026 "
+    - sprite: {fileID: 21300000, guid: a99bc04e0581997429048faa395664ec, type: 3}
+      text: "Welcome to radio 33 today! We\u2019re going to introduce several new
+        songs that were published recently to you!"
+    background3Data:
+    - sprite: {fileID: 21300000, guid: 1e1586927119fde40a9307c54148fd8e, type: 3}
       text: 123
     - sprite: {fileID: 21300000, guid: 462ea83b13fd5994493edf6a0184d591, type: 3}
       text: 123
     - sprite: {fileID: 21300000, guid: a99bc04e0581997429048faa395664ec, type: 3}
-      text: 123
-    background3Data:
-    - sprite: {fileID: 0}
-      text: 123
-    - sprite: {fileID: 0}
-      text: 123
-    - sprite: {fileID: 0}
       text: 123
     finalText: These guys are hilarious, I am gonna share this video to other folks.
       This really saved my days in a way that I never imagined!
