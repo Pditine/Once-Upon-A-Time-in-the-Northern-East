@@ -1037,9 +1037,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: It's a summer in 2015, with the rising tide of short videos platforms and
-    wide spread of electronic devices, many people could use their phone to share
-    their days.
+  m_Text: It's a summer in 2015, with the rising tide of short video platforms and
+    the wide spread of electronic devices, many people could use their phones to
+    share their days online.
 --- !u!222 &148790289
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2572,7 +2572,7 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: Unexpectedly, you lost your job in the factory in the Northeast. With nothing
-    to do, you use second-hand phone to view hundreds of videos on ticktok.
+    else to do, you use a second-hand phone to view hundreds of videos on ticktok.
 --- !u!222 &504193586
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5260,8 +5260,8 @@ MonoBehaviour:
   image: {fileID: 993721271}
   sprites:
   - {fileID: 21300000, guid: f7327706fa8d8bc4a903207e6c2a36ff, type: 3}
-  - {fileID: 21300000, guid: 89c88e408a5013e4abe13b243e8fccf7, type: 3}
   - {fileID: 21300000, guid: 704b56687c278744aae25bb51f54075d, type: 3}
+  - {fileID: 21300000, guid: 89c88e408a5013e4abe13b243e8fccf7, type: 3}
   points:
   - {fileID: 784558777}
   - {fileID: 423244867}
@@ -10244,7 +10244,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Suddenly, you think of a plan. A plan to cooperate with your folks in local
+  m_Text: Suddenly, you have a plan. A plan to cooperate with your folks in local
     place to make short videos, by which you all expect to make living...
 --- !u!222 &1970241111
 CanvasRenderer:

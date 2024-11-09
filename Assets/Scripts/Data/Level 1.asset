@@ -100,7 +100,7 @@ MonoBehaviour:
   commentData:
   - UserName: Garren#1009
     UserHead: {fileID: 21300000, guid: 248b01710b4873b4d97633a7668c9e2b, type: 3}
-    Comment: '@HaHaGuy why u like this?'
+    Comment: '@HaHaGuy u like it?'
   - UserName: PurpleFlower
     UserHead: {fileID: 21300000, guid: f0d4bc37ad95593409dfa6f3e184274a, type: 3}
     Comment: good for you
@@ -109,10 +109,10 @@ MonoBehaviour:
     Comment: very good
   - UserName: Martian_09
     UserHead: {fileID: 21300000, guid: b7849c68b0a8b8d439777a7926367da9, type: 3}
-    Comment: This is not understandable
+    Comment: not understandable
   - UserName: HaHaGuy
     UserHead: {fileID: 21300000, guid: d35456a3e1a6c2147aa7ccae8f61e3dd, type: 3}
-    Comment: hahahahahahahahahahahahaha
+    Comment: hahahahahahahahahaha
   expectedRevenue:
   - followNum: 0
     viewNum: 0
@@ -139,11 +139,12 @@ MonoBehaviour:
         songs that were published recently to you!"
     background3Data:
     - sprite: {fileID: 21300000, guid: 1e1586927119fde40a9307c54148fd8e, type: 3}
-      text: 123
+      text: Forgot to tell mom that I want an apple for breakfast tomorrow.
     - sprite: {fileID: 21300000, guid: 462ea83b13fd5994493edf6a0184d591, type: 3}
-      text: 123
+      text: "The exam today is extremely hard, I am so afraid of the grade\u2026 "
     - sprite: {fileID: 21300000, guid: a99bc04e0581997429048faa395664ec, type: 3}
-      text: 123
+      text: "Welcome to radio 33 today! We\u2019re going to introduce several new
+        songs that were published recently to you!"
     finalText: These guys are hilarious, I am gonna share this video to other folks.
       This really saved my days in a way that I never imagined!
   recordData:
