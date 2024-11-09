@@ -5259,9 +5259,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   image: {fileID: 993721271}
   sprites:
+  - {fileID: 21300000, guid: f7327706fa8d8bc4a903207e6c2a36ff, type: 3}
   - {fileID: 21300000, guid: 89c88e408a5013e4abe13b243e8fccf7, type: 3}
   - {fileID: 21300000, guid: 704b56687c278744aae25bb51f54075d, type: 3}
-  - {fileID: 21300000, guid: f7327706fa8d8bc4a903207e6c2a36ff, type: 3}
   points:
   - {fileID: 784558777}
   - {fileID: 423244867}
@@ -9585,7 +9585,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.46226406, g: 0.67138356, b: 1, a: 0}
+  m_BackGroundColor: {r: 0.68802655, g: 0.8014177, b: 0.9811321, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
