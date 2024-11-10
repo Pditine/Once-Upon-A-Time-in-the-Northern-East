@@ -20,24 +20,147 @@ MonoBehaviour:
     rightHead: {fileID: 21300000, guid: 224e089ad3a101944a35804c33afc38b, type: 3}
     messages1:
     - isLeft: 0
-      messageText: 
+      messageText: Cap
+      messageImage: {fileID: 0}
+    - isLeft: 0
+      messageText: Time for you to be on the show
+      messageImage: {fileID: 0}
+    - isLeft: 1
+      messageText: finally
+      messageImage: {fileID: 0}
+    - isLeft: 1
+      messageText: finally!!!
       messageImage: {fileID: 0}
     messageOptions:
-    - optionText: 
+    - optionText: How about record at the station
       optionEvent:
         m_PersistentCalls:
-          m_Calls: []
-    messages2: []
+          m_Calls:
+          - m_Target: {fileID: 0}
+            m_TargetAssemblyTypeName: 
+            m_MethodName: 
+            m_Mode: 0
+            m_Arguments:
+              m_ObjectArgument: {fileID: 0}
+              m_ObjectArgumentAssemblyTypeName: 
+              m_IntArgument: 0
+              m_FloatArgument: 0
+              m_StringArgument: 
+              m_BoolArgument: 0
+            m_CallState: 2
+    messages2:
+    - isLeft: 1
+      messageText: I am going to shout to Tiger lol
+      messageImage: {fileID: 0}
+    - isLeft: 0
+      messageText: do the best you can^^
+      messageImage: {fileID: 0}
+    - isLeft: 0
+      messageText: got you, meet at 10am
+      messageImage: {fileID: 0}
   publishData:
-    titles: []
-    tags: []
-  commentData: []
-  expectedRevenue: []
+    titles:
+    - title: Shenyang Arrival
+      publishCoefficient: 0.6
+      revenueData:
+        followNum: 75
+        viewNum: 750
+        rewardNum: 75
+    - title: On my way to catch you:(
+      publishCoefficient: 0.4
+      revenueData:
+        followNum: 25
+        viewNum: 250
+        rewardNum: 50
+    - title: I am here now@BrotherTiger
+      publishCoefficient: 0.2
+      revenueData:
+        followNum: 50
+        viewNum: 500
+        rewardNum: 25
+    tags:
+    - tag: '#RailwayStation'
+      publishCoefficient: 0.2
+      revenueData:
+        followNum: 25
+        viewNum: 250
+        rewardNum: 75
+    - tag: '#Immigrants'
+      publishCoefficient: 0.1
+      revenueData:
+        followNum: 75
+        viewNum: 500
+        rewardNum: 25
+    - tag: '#Gangs'
+      publishCoefficient: 0.3
+      revenueData:
+        followNum: 50
+        viewNum: 500
+        rewardNum: 50
+  commentData:
+  - UserName: Garren#1009
+    UserHead: {fileID: 21300000, guid: 248b01710b4873b4d97633a7668c9e2b, type: 3}
+    Comment: '@HaHaGuy u like this??'
+  - UserName: PurpleFlower
+    UserHead: {fileID: 21300000, guid: f0d4bc37ad95593409dfa6f3e184274a, type: 3}
+    Comment: good for you
+  - UserName: Qiu
+    UserHead: {fileID: 21300000, guid: 336cb76b6ba40394cb2329315fb89f8b, type: 3}
+    Comment: very good
+  - UserName: Martian_09
+    UserHead: {fileID: 21300000, guid: b7849c68b0a8b8d439777a7926367da9, type: 3}
+    Comment: not understandable
+  - UserName: HaHaGuy
+    UserHead: {fileID: 21300000, guid: d35456a3e1a6c2147aa7ccae8f61e3dd, type: 3}
+    Comment: hahahahahahahahahaha
+  - UserName: JohnM
+    UserHead: {fileID: 21300000, guid: be0cd39b7fa400c43a8fb04e919c843c, type: 3}
+    Comment: what the h
+  - UserName: Autumn Replicate
+    UserHead: {fileID: 21300000, guid: 9ed2593a65d206b47b8027dd4aaf8aac, type: 3}
+    Comment: Inter'esting
+  - UserName: Charlie_is_Writing
+    UserHead: {fileID: 21300000, guid: 3bd61ca3ab34f4c46a053dc6b429c2b1, type: 3}
+    Comment: creative work, inspiring
+  - UserName: Just_A_Bird
+    UserHead: {fileID: 21300000, guid: de3936072eae9bf419e6a52a48f77099, type: 3}
+    Comment: (I am passing by)
+  expectedRevenue:
+  - followNum: 450
+    viewNum: 500
+    rewardNum: 60
+  - followNum: 375
+    viewNum: 400
+    rewardNum: 64
   audienceReplyData:
-    background1Data: []
-    background2Data: []
-    background3Data: []
-    finalText: 
+    background1Data:
+    - sprite: {fileID: 21300000, guid: 9fc6f7d8ffe61d1418526170ba2c79b1, type: 3}
+      text: The smell of lavander is the best. I am going to order some of the fragrance
+        of it.
+    - sprite: {fileID: 21300000, guid: 002cfcf0f4d21e64b877dfb928ea58fc, type: 3}
+      text: I am going to buy some snacks as breakfast for tomorrow. Almost have
+        no time to eat:(
+    - sprite: {fileID: 21300000, guid: a99bc04e0581997429048faa395664ec, type: 3}
+      text: "The exam today is extremely hard, I am so afraid of the grade\u2026 "
+    background2Data:
+    - sprite: {fileID: 21300000, guid: ab19f6282c21d8a43bd09f94ca6d9b16, type: 3}
+      text: The gerbra on the road is so robust, I am going to take one for my kid.
+    - sprite: {fileID: 21300000, guid: e9b1f78e86daa934480608a8cca2ed6d, type: 3}
+      text: Bread is the best thing in the world. They are cheap and delicious with
+        sauce.
+    - sprite: {fileID: 21300000, guid: 5fafb920c35a0a24dba308b6e39748fd, type: 3}
+      text: Gonna to buy a new hammer perhaps. I almost exhausted it in the hard
+        work over this week.
+    background3Data:
+    - sprite: {fileID: 21300000, guid: 1e1586927119fde40a9307c54148fd8e, type: 3}
+      text: Really like the sunflowers in the shop. They are so energetic.
+    - sprite: {fileID: 21300000, guid: 262beb9fc9487364fba77848749e39fc, type: 3}
+      text: Forgot to tell mom that I want a tomato for breakfast tomorrow.
+    - sprite: {fileID: 21300000, guid: 462ea83b13fd5994493edf6a0184d591, type: 3}
+      text: "\"Welcome to radio 33 today! We\u2019re going to introduce several new
+        songs that were published recently to you!\""
+    finalText: These guys are hilarious, I am gonna share this video to other folks.
+      This really saved my days in a way that I never imagined!
   recordData:
   - video: {fileID: 6367736835091799635, guid: 9183fedd35c0fed428bb95284e04c918, type: 3}
     audio: {fileID: 8300000, guid: f34629d2a8764594b963d77fdccc9417, type: 3}

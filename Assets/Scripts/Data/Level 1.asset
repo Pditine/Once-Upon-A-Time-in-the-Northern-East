@@ -16,8 +16,8 @@ MonoBehaviour:
   levelName: No Good Juice
   messageData:
     otherName: Brother Tiger
-    leftHead: {fileID: 21300000, guid: 7ae8979dcdf50064880bc3357fc3d0b9, type: 3}
-    rightHead: {fileID: 21300000, guid: 224e089ad3a101944a35804c33afc38b, type: 3}
+    leftHead: {fileID: 21300000, guid: 224e089ad3a101944a35804c33afc38b, type: 3}
+    rightHead: {fileID: 21300000, guid: 7ae8979dcdf50064880bc3357fc3d0b9, type: 3}
     messages1:
     - isLeft: 1
       messageText: hey bro
@@ -60,47 +60,47 @@ MonoBehaviour:
       messageImage: {fileID: 0}
   publishData:
     titles:
-    - title: "\u558A\u8BDD\u6740\u9A6C\u7279\u56E2\u957F"
-      publishCoefficient: 0.1
+    - title: Shout out to Captain Eccentric
+      publishCoefficient: 0.2
       revenueData:
-        followNum: 3
-        viewNum: 0
-        rewardNum: 0
-    - title: "\u4F60\u8FD9\u4E2A\u5F1F\u4E2D\u4E4B\u5F1F@\u6740\u9A6C\u7279\u56E2\u957F"
+        followNum: 25
+        viewNum: 25
+        rewardNum: 7
+    - title: You are nothing @CaptainEccentric
       publishCoefficient: 0.4
       revenueData:
-        followNum: 0
-        viewNum: 5
-        rewardNum: 0
-    - title: "\u6700\u540E\u901A\u7252"
-      publishCoefficient: 0.7
+        followNum: 50
+        viewNum: 50
+        rewardNum: 15
+    - title: No Good Juice
+      publishCoefficient: 0.6
       revenueData:
-        followNum: 0
-        viewNum: 3
-        rewardNum: 0
+        followNum: 75
+        viewNum: 75
+        rewardNum: 10
     tags:
-    - tag: "\u641E\u7B11 "
-      publishCoefficient: 0
+    - tag: '#Funny'
+      publishCoefficient: 0.2
       revenueData:
-        followNum: 3
-        viewNum: 0
-        rewardNum: 0
-    - tag: "\u8857\u5934\u6597\u6BB4 "
-      publishCoefficient: 0
+        followNum: 25
+        viewNum: 50
+        rewardNum: 7
+    - tag: '#StreetFight'
+      publishCoefficient: 0.1
       revenueData:
-        followNum: 0
-        viewNum: 0
+        followNum: 75
+        viewNum: 75
+        rewardNum: 3
+    - tag: '#Gangs'
+      publishCoefficient: 0.3
+      revenueData:
+        followNum: 50
+        viewNum: 50
         rewardNum: 5
-    - tag: "\u7CBE\u795E\u5C0F\u4F19 "
-      publishCoefficient: 0
-      revenueData:
-        followNum: 0
-        viewNum: 10
-        rewardNum: 0
   commentData:
   - UserName: Garren#1009
     UserHead: {fileID: 21300000, guid: 248b01710b4873b4d97633a7668c9e2b, type: 3}
-    Comment: '@HaHaGuy u like it?'
+    Comment: '@HaHaGuy u like this??'
   - UserName: PurpleFlower
     UserHead: {fileID: 21300000, guid: f0d4bc37ad95593409dfa6f3e184274a, type: 3}
     Comment: good for you
@@ -113,6 +113,18 @@ MonoBehaviour:
   - UserName: HaHaGuy
     UserHead: {fileID: 21300000, guid: d35456a3e1a6c2147aa7ccae8f61e3dd, type: 3}
     Comment: hahahahahahahahahaha
+  - UserName: JohnM
+    UserHead: {fileID: 21300000, guid: be0cd39b7fa400c43a8fb04e919c843c, type: 3}
+    Comment: what the h
+  - UserName: Autumn Replicate
+    UserHead: {fileID: 21300000, guid: 9ed2593a65d206b47b8027dd4aaf8aac, type: 3}
+    Comment: Inter'esting
+  - UserName: Charlie_is_Writing
+    UserHead: {fileID: 21300000, guid: 3bd61ca3ab34f4c46a053dc6b429c2b1, type: 3}
+    Comment: creative work, inspiring
+  - UserName: Just_A_Bird
+    UserHead: {fileID: 21300000, guid: de3936072eae9bf419e6a52a48f77099, type: 3}
+    Comment: (I am passing by)
   expectedRevenue:
   - followNum: 0
     viewNum: 0
@@ -120,31 +132,36 @@ MonoBehaviour:
   - followNum: 0
     viewNum: 0
     rewardNum: 0
+  - followNum: 150
+    viewNum: 200
+    rewardNum: 34
   audienceReplyData:
     background1Data:
-    - sprite: {fileID: 21300000, guid: 1e1586927119fde40a9307c54148fd8e, type: 3}
-      text: Forgot to tell mom that I want an apple for breakfast tomorrow.
+    - sprite: {fileID: 21300000, guid: 9fc6f7d8ffe61d1418526170ba2c79b1, type: 3}
+      text: The smell of lavander is the best. I am going to order some of the fragrance
+        of it.
+    - sprite: {fileID: 21300000, guid: 002cfcf0f4d21e64b877dfb928ea58fc, type: 3}
+      text: I am going to buy some snacks as breakfast for tomorrow. Almost have
+        no time to eat:(
     - sprite: {fileID: 21300000, guid: a99bc04e0581997429048faa395664ec, type: 3}
       text: "The exam today is extremely hard, I am so afraid of the grade\u2026 "
-    - sprite: {fileID: 21300000, guid: 462ea83b13fd5994493edf6a0184d591, type: 3}
-      text: "Welcome to radio 33 today! We\u2019re going to introduce several new
-        songs that were published recently to you!"
     background2Data:
-    - sprite: {fileID: 21300000, guid: 1e1586927119fde40a9307c54148fd8e, type: 3}
-      text: Forgot to tell mom that I want an apple for breakfast tomorrow.
-    - sprite: {fileID: 21300000, guid: 462ea83b13fd5994493edf6a0184d591, type: 3}
-      text: "The exam today is extremely hard, I am so afraid of the grade\u2026 "
-    - sprite: {fileID: 21300000, guid: a99bc04e0581997429048faa395664ec, type: 3}
-      text: "Welcome to radio 33 today! We\u2019re going to introduce several new
-        songs that were published recently to you!"
+    - sprite: {fileID: 21300000, guid: ab19f6282c21d8a43bd09f94ca6d9b16, type: 3}
+      text: The gerbra on the road is so robust, I am going to take one for my kid.
+    - sprite: {fileID: 21300000, guid: e9b1f78e86daa934480608a8cca2ed6d, type: 3}
+      text: Bread is the best thing in the world. They are cheap and delicious with
+        sauce.
+    - sprite: {fileID: 21300000, guid: 5fafb920c35a0a24dba308b6e39748fd, type: 3}
+      text: Gonna to buy a new hammer perhaps. I almost exhausted it in the hard
+        work over this week.
     background3Data:
     - sprite: {fileID: 21300000, guid: 1e1586927119fde40a9307c54148fd8e, type: 3}
-      text: Forgot to tell mom that I want an apple for breakfast tomorrow.
+      text: Really like the sunflowers in the shop. They are so energetic.
+    - sprite: {fileID: 21300000, guid: 262beb9fc9487364fba77848749e39fc, type: 3}
+      text: Forgot to tell mom that I want a tomato for breakfast tomorrow.
     - sprite: {fileID: 21300000, guid: 462ea83b13fd5994493edf6a0184d591, type: 3}
-      text: "The exam today is extremely hard, I am so afraid of the grade\u2026 "
-    - sprite: {fileID: 21300000, guid: a99bc04e0581997429048faa395664ec, type: 3}
-      text: "Welcome to radio 33 today! We\u2019re going to introduce several new
-        songs that were published recently to you!"
+      text: "\"Welcome to radio 33 today! We\u2019re going to introduce several new
+        songs that were published recently to you!\""
     finalText: These guys are hilarious, I am gonna share this video to other folks.
       This really saved my days in a way that I never imagined!
   recordData:

@@ -2571,8 +2571,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Unexpectedly, you lost your job in the factory in the Northeast. With nothing
-    else to do, you use a second-hand phone to view hundreds of videos on ticktok.
+  m_Text: On a fine morning, you lost your job in the factory in the Northeast. With
+    nothing else to do, you use a second-hand phone to view hundreds of videos on
+    ticktok.
 --- !u!222 &504193586
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3408,7 +3409,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 86, y: 168}
+  m_AnchoredPosition: {x: 50, y: 168}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &723369360
@@ -6182,7 +6183,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "1000\u6761\u8BC4\u8BBA"
+  m_Text: 1000 Comments
 --- !u!222 &1095593062
 CanvasRenderer:
   m_ObjectHideFlags: 0

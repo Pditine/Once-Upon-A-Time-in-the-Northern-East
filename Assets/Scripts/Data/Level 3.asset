@@ -15,29 +15,149 @@ MonoBehaviour:
   id: 2
   levelName: Brother in Brothers
   messageData:
-    otherName: Captain Eccentric
-    leftHead: {fileID: 21300000, guid: 83218905254f81244a3e1c88e4d4879d, type: 3}
+    otherName: Brother Tiger
+    leftHead: {fileID: 21300000, guid: 224e089ad3a101944a35804c33afc38b, type: 3}
     rightHead: {fileID: 21300000, guid: 7ae8979dcdf50064880bc3357fc3d0b9, type: 3}
     messages1:
+    - isLeft: 1
+      messageText: Hey
+      messageImage: {fileID: 0}
+    - isLeft: 1
+      messageText: We need to make some cash now
+      messageImage: {fileID: 0}
     - isLeft: 0
-      messageText: 
+      messageText: Ok, what and when
       messageImage: {fileID: 0}
     messageOptions:
-    - optionText: 
+    - optionText: Probably we are standing together?
       optionEvent:
         m_PersistentCalls:
-          m_Calls: []
-    messages2: []
+          m_Calls:
+          - m_Target: {fileID: 0}
+            m_TargetAssemblyTypeName: 
+            m_MethodName: 
+            m_Mode: 0
+            m_Arguments:
+              m_ObjectArgument: {fileID: 0}
+              m_ObjectArgumentAssemblyTypeName: 
+              m_IntArgument: 0
+              m_FloatArgument: 0
+              m_StringArgument: 
+              m_BoolArgument: 0
+            m_CallState: 2
+    messages2:
+    - isLeft: 1
+      messageText: if you want
+      messageImage: {fileID: 0}
+    - isLeft: 0
+      messageText: then let's do this in afternoon
+      messageImage: {fileID: 0}
+    - isLeft: 1
+      messageText: cool
+      messageImage: {fileID: 0}
   publishData:
-    titles: []
-    tags: []
-  commentData: []
-  expectedRevenue: []
+    titles:
+    - title: Brother in Brothers
+      publishCoefficient: 0.6
+      revenueData:
+        followNum: 75
+        viewNum: 750
+        rewardNum: 75
+    - title: boof~boof~
+      publishCoefficient: 0.2
+      revenueData:
+        followNum: 75
+        viewNum: 500
+        rewardNum: 50
+    - title: Let's Meet @CaptainEccentric
+      publishCoefficient: 0.4
+      revenueData:
+        followNum: 25
+        viewNum: 500
+        rewardNum: 25
+    tags:
+    - tag: '#Acrobatics'
+      publishCoefficient: 0.2
+      revenueData:
+        followNum: 50
+        viewNum: 500
+        rewardNum: 75
+    - tag: '#Strength'
+      publishCoefficient: 0.1
+      revenueData:
+        followNum: 25
+        viewNum: 250
+        rewardNum: 25
+    - tag: '#Gangs'
+      publishCoefficient: 0.3
+      revenueData:
+        followNum: 50
+        viewNum: 500
+        rewardNum: 50
+  commentData:
+  - UserName: Garren#1009
+    UserHead: {fileID: 21300000, guid: 248b01710b4873b4d97633a7668c9e2b, type: 3}
+    Comment: '@HaHaGuy u like this??'
+  - UserName: PurpleFlower
+    UserHead: {fileID: 21300000, guid: f0d4bc37ad95593409dfa6f3e184274a, type: 3}
+    Comment: good for you
+  - UserName: Qiu
+    UserHead: {fileID: 21300000, guid: 336cb76b6ba40394cb2329315fb89f8b, type: 3}
+    Comment: very good
+  - UserName: Martian_09
+    UserHead: {fileID: 21300000, guid: b7849c68b0a8b8d439777a7926367da9, type: 3}
+    Comment: not understandable
+  - UserName: HaHaGuy
+    UserHead: {fileID: 21300000, guid: d35456a3e1a6c2147aa7ccae8f61e3dd, type: 3}
+    Comment: hahahahahahahahahaha
+  - UserName: JohnM
+    UserHead: {fileID: 21300000, guid: be0cd39b7fa400c43a8fb04e919c843c, type: 3}
+    Comment: what the h
+  - UserName: Autumn Replicate
+    UserHead: {fileID: 21300000, guid: 9ed2593a65d206b47b8027dd4aaf8aac, type: 3}
+    Comment: Inter'esting
+  - UserName: Charlie_is_Writing
+    UserHead: {fileID: 21300000, guid: 3bd61ca3ab34f4c46a053dc6b429c2b1, type: 3}
+    Comment: creative work, inspiring
+  - UserName: Just_A_Bird
+    UserHead: {fileID: 21300000, guid: de3936072eae9bf419e6a52a48f77099, type: 3}
+    Comment: (I am passing by)
+  expectedRevenue:
+  - followNum: 337
+    viewNum: 375
+    rewardNum: 45
+  - followNum: 387
+    viewNum: 300
+    rewardNum: 37
   audienceReplyData:
-    background1Data: []
-    background2Data: []
-    background3Data: []
-    finalText: 
+    background1Data:
+    - sprite: {fileID: 21300000, guid: 9fc6f7d8ffe61d1418526170ba2c79b1, type: 3}
+      text: The smell of lavander is the best. I am going to order some of the fragrance
+        of it.
+    - sprite: {fileID: 21300000, guid: 002cfcf0f4d21e64b877dfb928ea58fc, type: 3}
+      text: I am going to buy some snacks as breakfast for tomorrow. Almost have
+        no time to eat:(
+    - sprite: {fileID: 21300000, guid: a99bc04e0581997429048faa395664ec, type: 3}
+      text: "The exam today is extremely hard, I am so afraid of the grade\u2026 "
+    background2Data:
+    - sprite: {fileID: 21300000, guid: ab19f6282c21d8a43bd09f94ca6d9b16, type: 3}
+      text: The gerbra on the road is so robust, I am going to take one for my kid.
+    - sprite: {fileID: 21300000, guid: e9b1f78e86daa934480608a8cca2ed6d, type: 3}
+      text: Bread is the best thing in the world. They are cheap and delicious with
+        sauce.
+    - sprite: {fileID: 21300000, guid: 5fafb920c35a0a24dba308b6e39748fd, type: 3}
+      text: Gonna to buy a new hammer perhaps. I almost exhausted it in the hard
+        work over this week.
+    background3Data:
+    - sprite: {fileID: 21300000, guid: 1e1586927119fde40a9307c54148fd8e, type: 3}
+      text: Really like the sunflowers in the shop. They are so energetic.
+    - sprite: {fileID: 21300000, guid: 262beb9fc9487364fba77848749e39fc, type: 3}
+      text: Forgot to tell mom that I want a tomato for breakfast tomorrow.
+    - sprite: {fileID: 21300000, guid: 462ea83b13fd5994493edf6a0184d591, type: 3}
+      text: "\"Welcome to radio 33 today! We\u2019re going to introduce several new
+        songs that were published recently to you!\""
+    finalText: These guys are hilarious, I am gonna share this video to other folks.
+      This really saved my days in a way that I never imagined!
   recordData:
   - video: {fileID: 2781190583780942068, guid: 7464e96963e958c4b8b5ae6dafee7c2e, type: 3}
     audio: {fileID: 8300000, guid: 72666c79b43d23a459dc2a227e0bde0a, type: 3}
